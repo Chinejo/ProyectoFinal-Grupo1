@@ -4,7 +4,7 @@ const NavBar = () => {
             <nav>
                 <div className="navbar-logo">
                     <a href="#inicio">
-                        <img src="Landing-Page/src/assets/LogoEscolar.jpg" alt="Logo de la Escuela de Comercio República de Panamá"/>
+                        <img src="./src/assets/LogoEscolar.jpg" alt="Logo de la Escuela de Comercio República de Panamá"/>
                         <span className="navbar-title">Escuela de Comercio República de Panamá</span>
                     </a>
                 </div>
