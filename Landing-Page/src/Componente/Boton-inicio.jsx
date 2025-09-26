@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Boton-Inicio.css';
 
 const BotonInicio = () => {
   const [visible, setVisible] = useState(false);
@@ -24,7 +23,7 @@ const BotonInicio = () => {
       onClick={irArriba}
     
     >
-
+      Enviar
     </button>
   );
 };

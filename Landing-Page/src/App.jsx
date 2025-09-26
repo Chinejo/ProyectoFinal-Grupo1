@@ -1,12 +1,12 @@
-import BotonInicio from './components/Boton-Inicio';
+import React from 'react'
+import BotonInicio from './Componente/Boton-inicio' 
 
-function App() {
+const App = () => {
   return (
     <div>
-      {/* Tu contenido */}
       <BotonInicio />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
