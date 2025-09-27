@@ -16,7 +16,7 @@ function OfertaAcademica() {
               <p>Esta modalidad fomenta el pensamiento crítico, la comprensión histórica y el análisis de fenómenos sociales. Ideal para estudiantes interesados en la ciudadanía, la comunicación y el trabajo comunitario.</p> 
               <dl>
                 <dt>Duración:</dt><dd>6 años</dd>
-                <dt>Horarios:</dt><dd>14:00 a 18:00</dd> 
+                <dt>Horarios:</dt><dd>De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd> 
                 <dt>Edad:</dt><dd>De 12 años a 17 años</dd> 
                 <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
               </dl>
@@ -29,7 +29,7 @@ function OfertaAcademica() {
               <p>Esta modalidad promueve el desarrollo del pensamiento lógico y científico a través del estudio de la biología, química, física y matemática. Está orientada a estudiantes con interés en la investigación, el medio ambiente y las ciencias aplicadas.</p> 
               <dl>
                 <dt>Duración:</dt><dd>6 años</dd>
-                <dt>Horarios:</dt><dd>14:00 a 18:00</dd> 
+                <dt>Horarios:</dt><dd>De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd> 
                 <dt>Edad:</dt><dd>De 12 años a 17 años</dd> 
                 <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
               </dl>
@@ -42,7 +42,7 @@ function OfertaAcademica() {
               <p>Esta orientación introduce a los estudiantes en el mundo de la administración, la contabilidad y las finanzas. Se enfoca en el desarrollo de habilidades organizativas, análisis económico y gestión de recursos.</p> 
               <dl>
                 <dt>Duración:</dt><dd>6 años</dd>
-                <dt>Horarios:</dt><dd>14:00 a 18:00</dd> 
+                <dt>Horarios:</dt><dd>De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd> 
                 <dt>Edad:</dt><dd>De 12 años a 17 años</dd> 
                 <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
               </dl>
