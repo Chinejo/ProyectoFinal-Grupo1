@@ -15,7 +15,7 @@ function SobreNosotros() {
             <br /><br />
             Formamos jóvenes capaces de construir su futuro con integridad, conocimiento y compromiso. Porque educar es transformar, y en nuestra escuela, lo hacemos cada día.
         </p>
-        <img src="./src/assets/escuela.webp" alt="Escuela de Comercio Republica de Panamá" />
+        <img src="./src/assets/escuela.jpeg" alt="Escuela de Comercio Republica de Panamá" />
     </div>
   )
 }
