@@ -1,10 +1,10 @@
 import React from 'react'
-import OfertaAcademica from './componentes/SobreNosotros'
+import SobreNosotros from './componentes/SobreNosotros'
 
 function App() {
   return (
     <div>
-        <OfertaAcademica/>
+      <SobreNosotros/>
     </div>
   )
 }
