@@ -1,22 +1,17 @@
 import React from 'react'
+import escuelaImg from '../assets/escuela.jpeg'
 
 function SobreNosotros() {
   return (
-    <div>
-        <h2>Sobre nosotros</h2>
-        <p>
-            La Escuela de Comercio República de Panamá, ubicada en la ciudad de Concepción, Tucumán, es una institución educativa pública con una sólida trayectoria en la formación integral de jóvenes. Desde su fundación, ha sido un pilar en la comunidad, promoviendo valores de responsabilidad, respeto y compromiso ciudadano.
-            <br /><br />
-            Nuestra misión es brindar una educación de calidad que prepare a los estudiantes para enfrentar los desafíos del mundo actual, combinando saberes académicos con herramientas prácticas que favorezcan su inserción en el ámbito laboral y su desarrollo personal.
-            <br /><br />
-            Con una propuesta pedagógica centrada en la formación comercial y contable, la escuela ofrece espacios de aprendizaje dinámicos, fomentando el pensamiento crítico, el trabajo colaborativo y el uso responsable de las tecnologías. El cuerpo docente, altamente capacitado y comprometido, acompaña a cada estudiante en su proceso formativo, promoviendo el esfuerzo, la autonomía y el espíritu emprendedor.
-            <br /><br />
-            La Escuela de Comercio República de Panamá se distingue por su vínculo activo con la comunidad, participando en proyectos solidarios, actividades culturales y propuestas que fortalecen el sentido de pertenencia y la responsabilidad social.
-            <br /><br />
-            Formamos jóvenes capaces de construir su futuro con integridad, conocimiento y compromiso. Porque educar es transformar, y en nuestra escuela, lo hacemos cada día.
-        </p>
-        <img src="./src/assets/escuela.jpeg" alt="Escuela de Comercio Republica de Panamá" />
-    </div>
+    <section>
+        <h2>SOBRE NOSOTROS</h2>
+        <p>La Escuela de Comercio República de Panamá, situada en el corazón de Concepción, Tucumán, es una institución pública con una sólida trayectoria en la formación académica y humana de jóvenes. Fundada en la década de 1960, nació como respuesta a la creciente demanda de educación comercial en el sur tucumano, consolidándose con el tiempo como un referente educativo en la región.</p>
+        <p>Desde sus inicios, la escuela ha mantenido un firme compromiso con la comunidad, promoviendo valores de responsabilidad, respeto y vocación de servicio. A lo largo de los años, ha formado generaciones de estudiantes que hoy se desempeñan en ámbitos contables, administrativos, empresariales y educativos, llevando consigo el sello de una formación ética y profesional.</p> 
+        <p>Nuestra misión es ofrecer una educación de calidad, inclusiva y actualizada, que prepare a los estudiantes para enfrentar los desafíos del mundo contemporáneo. A través de una propuesta pedagógica orientada al área comercial y contable, promovemos el pensamiento crítico, el trabajo colaborativo y el uso responsable de las tecnologías como herramientas para el aprendizaje.</p>
+        <p>Contamos con un equipo docente altamente capacitado, que acompaña de manera cercana y profesional el proceso formativo de cada estudiante. Fomentamos valores como la responsabilidad, la solidaridad y el compromiso, pilares fundamentales para la construcción de una ciudadanía activa y consciente.</p>
+        <p>La Escuela se distingue por su participación en proyectos solidarios, actividades culturales y espacios de formación que trascienden el aula. Creemos en una educación que transforma, que conecta con la realidad y que impulsa a cada joven a construir su futuro con integridad, conocimiento y vocación.</p>
+        <img src={escuelaImg} alt="Foto de la fachada principal de la Escuela de Comercio Republica de Panamá" />
+    </section>
   )
 }
 
