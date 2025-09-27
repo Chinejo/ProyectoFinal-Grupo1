@@ -1,10 +1,9 @@
-import BotonInicio from './components/Boton-Inicio';
+import React from 'react';
 
 function App() {
   return (
     <div>
-      {/* Tu contenido */}
-      <BotonInicio />
+
     </div>
   );
 }
