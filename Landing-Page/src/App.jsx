@@ -1,10 +1,9 @@
-import BotonInicio from './components/Boton-Inicio';
+import BotonContacto from './Componente/Boton-contacto';
 
 function App() {
   return (
     <div>
-      {/* Tu contenido */}
-      <BotonInicio />
+      <BotonContacto />
     </div>
   );
 }
