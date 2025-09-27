@@ -1,9 +1,9 @@
 
 const MapaUbicacion = () => {
   return (
-    <section 
-      id="mapa-ubicacion" 
-      style="text-Align: center; margin-Top:20px"
+    <section
+      id="mapa-ubicacion"
+      style={{ textAlign: "center", marginTop: 20 }}
     >
       <h2>¿Dónde estamos?</h2>
       <iframe
