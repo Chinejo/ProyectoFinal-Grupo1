@@ -1,4 +1,4 @@
-import BotonContacto from './Componente/Boton-contacto';
+import BotonContacto from './components/Boton-contacto';
 
 function App() {
   return (
