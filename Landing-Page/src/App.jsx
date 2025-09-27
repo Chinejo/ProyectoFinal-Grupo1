@@ -1,5 +1,5 @@
 import React from 'react'
-import BotonInicio from './Componente/Boton-inicio' 
+import BotonInicio from './components/Boton-inicio' 
 
 const App = () => {
   return (
