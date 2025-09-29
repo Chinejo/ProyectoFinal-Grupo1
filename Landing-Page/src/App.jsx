@@ -1,3 +1,15 @@
+import React from 'react'
+import SobreNosotros from './componentes/SobreNosotros'
+
+function App() {
+  return (
+    <div>
+      <SobreNosotros/>
+    </div>
+  )
+}
+
+export default App
 import NavBar from "./components/Nav-Bar.jsx"
 import OfertaAcademica from './componentes/OfertaAcademica'
 import Galeria from './componentes/Galeria'
