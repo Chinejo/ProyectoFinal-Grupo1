@@ -1,11 +1,14 @@
+import React from 'react'
+import BotonInicio from './components/Boton-inicio' 
 import BotonContacto from './components/Boton-contacto';
 
-function App() {
+const App = () => {
   return (
     <div>
+      <BotonInicio />
       <BotonContacto />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
