@@ -1,9 +1,9 @@
-import React from 'react';
+import BotonContacto from './components/Boton-contacto';
 
 function App() {
   return (
     <div>
-
+      <BotonContacto />
     </div>
   );
 }
