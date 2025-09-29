@@ -1,32 +1,22 @@
-import React from 'react'
-import SobreNosotros from './componentes/SobreNosotros'
-
-function App() {
-  return (
-    <div>
-      <SobreNosotros/>
-    </div>
-  )
-}
-
-export default App
 import NavBar from "./components/Nav-Bar.jsx"
-import OfertaAcademica from './componentes/OfertaAcademica'
-import Galeria from './componentes/Galeria'
+import SobreNosotros from './components/SobreNosotros.jsx'
+import OfertaAcademica from './components/OfertaAcademica.jsx'
+import Galeria from './components/Galeria.jsx'
+import MapaUbicacion from './components/Mapa-ubicacion.jsx'
 import BotonInicio from './components/Boton-inicio' 
 import BotonContacto from './components/Boton-contacto'
-import MapaUbicacion from './componentes/Mapa-ubicacion'
 import Footer from "./components/Footer"
 
 function App() {
   return (
     <>
       <NavBar />
+      <SobreNosotros />
       <OfertaAcademica />
       <Galeria />
+      <MapaUbicacion />
       <BotonInicio />
       <BotonContacto />
-      <MapaUbicacion />
       <Footer />
     </>
   );
