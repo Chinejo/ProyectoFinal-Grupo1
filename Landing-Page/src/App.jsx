@@ -1,4 +1,4 @@
-import NavBar from "./components/Nav-Bar.jsx"
+import NavBar from "./components/NavBar.jsx"
 import SobreNosotros from './components/SobreNosotros.jsx'
 import OfertaAcademica from './components/OfertaAcademica.jsx'
 import Galeria from './components/Galeria.jsx'
