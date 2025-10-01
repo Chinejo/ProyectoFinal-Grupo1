@@ -3,7 +3,7 @@ import escuelaImg from '../assets/escuela.jpeg'
 
 function SobreNosotros() {
   return (
-    <section>
+    <section id="sobre-nosotros">
         <h2>SOBRE NOSOTROS</h2>
         <p>La Escuela de Comercio República de Panamá, situada en el corazón de Concepción, Tucumán, es una institución pública con una sólida trayectoria en la formación académica y humana de jóvenes. Fundada en la década de 1960, nació como respuesta a la creciente demanda de educación comercial en el sur tucumano, consolidándose con el tiempo como un referente educativo en la región.</p>
         <p>Desde sus inicios, la escuela ha mantenido un firme compromiso con la comunidad, promoviendo valores de responsabilidad, respeto y vocación de servicio. A lo largo de los años, ha formado generaciones de estudiantes que hoy se desempeñan en ámbitos contables, administrativos, empresariales y educativos, llevando consigo el sello de una formación ética y profesional.</p> 

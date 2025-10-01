@@ -2,7 +2,7 @@ import React from 'react'
 
 function OfertaAcademica() {
   return (
-    <section>
+    <section id="info-planes">
       <h2>OFERTA ACADÉMICA</h2>
       <section>
         <header>

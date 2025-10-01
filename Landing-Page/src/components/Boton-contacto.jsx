@@ -2,41 +2,39 @@
 const BotonContacto = () => {
 
   return (
-    <>
+    <section id="contacto">
       <button>
         Contacto
       </button>
-         <div>
-            <label>
-              Nombre:
-            </label>
-          </div>
 
-          <div>
-            <label>
-              Email:
-            </label>
-          </div>
+      <div>
+        <label>
+          Nombre:
+        </label>
+      </div>
 
-          <div>
-            <label>
-              Celular:
-            </label>
-            
-          </div>
+      <div>
+        <label>
+          Email:
+        </label>
+      </div>
 
-          <div>
-            <label>
-              Mensaje:
-            </label>
-          </div>
+      <div>
+        <label>
+          Celular:
+        </label>        
+      </div>
 
-          <button>
-            Enviar
-          </button>
-        
-    
-    </>
+      <div>
+        <label>
+          Mensaje:
+        </label>
+      </div>
+
+      <button>
+        Enviar
+      </button>
+    </section>
   );
 };
 

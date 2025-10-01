@@ -7,7 +7,7 @@ import canchaImg from '../assets/cancha.jpg'
 
 const Galeria = () => {
   return (
-    <section>
+    <section id="galeria">
       <h2>Galería</h2>
       <p>Estos son algunos sectores de nuestra institución</p>
         <div>

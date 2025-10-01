@@ -1,6 +1,6 @@
 const NavBar = () => {
     return (
-        <header>
+        <header id="inicio">
             <nav>
                 <div className="navbar-logo">
                     <a href="#inicio">

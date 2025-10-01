@@ -10,7 +10,7 @@ const Footer = () => {
               href="https://facebook.com/escueladecomerciorepublicadepanama" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="Visita nuestra página de Facebook"
+              aria-label="Link a nuestra página de Facebook"
             >
               <img src="/icons/facebook.svg" alt="Facebook" aria-hidden="true" />
             </a>
@@ -18,7 +18,7 @@ const Footer = () => {
               href="https://facebook.com/escueladecomerciorepublicadepanama" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="Vísita la página del turno noche"
+              aria-label="Link a la página del turno noche"
             >
               <img src="/icons/twitter.svg" alt="Twitter" aria-hidden="true" />
             </a>
@@ -26,7 +26,7 @@ const Footer = () => {
               href="https://instagram.com/tuempresa" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="Síguenos en Instagram"
+              aria-label="Link a nuestra página de Instagram"
             >
               <img src="/icons/instagram.svg" alt="Instagram" aria-hidden="true" />
             </a>
