@@ -1,3 +1,4 @@
+import '../styles/NavBar.css';
 const NavBar = () => {
     return (
         <header id="inicio">
