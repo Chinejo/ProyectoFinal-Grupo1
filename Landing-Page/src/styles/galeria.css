@@ -1,0 +1,56 @@
+#galeria {
+    background-color: #E6E9F0;
+    padding: 2rem;
+    font-family: 'Georgia', serif;
+}
+
+#galeria h2 {
+    text-align: center;
+    color: #2C3E50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#galeria > p {
+    text-align: center;
+    color: #34495E;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+#galeria > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#galeria div {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#galeria div:hover {
+    transform: translateY(-5px);
+}
+
+#galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#galeria div p {
+    padding: 1rem;
+    text-align: center;
+    color: #2C3E50;
+    font-size: 1.1rem;
+    margin: 0;
+}
