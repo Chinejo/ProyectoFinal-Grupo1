@@ -1,4 +1,3 @@
-///comentario de prueba
 const Footer = () => {
   return (
     <footer className="footer">
