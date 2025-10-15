@@ -6,12 +6,14 @@ import MapaUbicacion from './components/Mapa-ubicacion.jsx'
 import BotonInicio from './components/Boton-inicio' 
 import BotonContacto from './components/Boton-contacto'
 import Footer from "./components/Footer"
+import Carrusel from "./components/carrusel.jsx"
 
 function App() {
   return (
     <>
       <NavBar />
       <SobreNosotros />
+      <Carrusel />
       <OfertaAcademica />
       <Galeria />
       <MapaUbicacion />
