@@ -1,3 +1,4 @@
+import logo from "../assets/LogoEscolar.jpg"
 import '../styles/navbar.css';
 const NavBar = () => {
     return (
@@ -5,7 +6,7 @@ const NavBar = () => {
             <nav>
                 <div className="navbar-logo">
                     <a href="#inicio">
-                        <img src="./src/assets/LogoEscolar.jpg" alt="Logo de la Escuela de Comercio República de Panamá"/>
+                        <img src={logo} alt="Logo de la Escuela de Comercio República de Panamá"/>
                         <span className="navbar-title">Escuela de Comercio República de Panamá</span>
                     </a>
                 </div>
