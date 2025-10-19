@@ -1,10 +1,11 @@
+import logo from "../assets/LogoEscolar.jpg"
 const NavBar = () => {
     return (
         <header id="inicio">
             <nav>
                 <div className="navbar-logo">
                     <a href="#inicio">
-                        <img src="./src/assets/LogoEscolar.jpg" alt="Logo de la Escuela de Comercio República de Panamá"/>
+                        <img src={logo} alt="Logo de la Escuela de Comercio República de Panamá"/>
                         <span className="navbar-title">Escuela de Comercio República de Panamá</span>
                     </a>
                 </div>
