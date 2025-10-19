@@ -1,8 +1,9 @@
+import logo from "../assets/LogoEscolar.jpg"
 import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-        <img src="./src/assets/LogoEscolar.jpg" alt="Logo de la Escuela de Comercio República de Panamá" className="footer-logo" aria-hidden="true" />
+        <img src={logo} alt="Logo de la Escuela de Comercio República de Panamá" className="footer-logo" aria-hidden="true" />
       <div className="footer-content">
         <div className="footer-section">
           <h3>Escuela de Comercio República de Panamá</h3>
