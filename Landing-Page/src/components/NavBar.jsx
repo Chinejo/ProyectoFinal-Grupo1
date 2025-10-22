@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../assets/LogoEscolar.jpg';
 import '../styles/NavBar.css';
 
-function BasicExample() {
+function NavBar() {
   return (
     <div className="navbar-wrapper">
       <Navbar expand="lg" className="navbar-main bg-body-tertiary">
@@ -18,6 +18,7 @@ function BasicExample() {
             />
             <span className="navbar-title">Escuela de Comercio República de Panamá</span>
           </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggle-mobile" />
         </Container>
 
@@ -35,4 +36,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavBar;
