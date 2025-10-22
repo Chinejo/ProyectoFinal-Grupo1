@@ -1,6 +1,5 @@
 #sobre-nosotros {
-background: #bebecf;
-background: radial-gradient(circle, rgba(190, 190, 207, 1) 0%, rgba(98, 113, 161, 1) 14%, rgba(190, 190, 207, 1) 92%);
+    background-color: rgb(202, 204, 223);
     padding: 80px;
 }
 
