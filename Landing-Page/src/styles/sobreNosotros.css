@@ -1,5 +1,6 @@
 #sobre-nosotros {
-    background-color: rgb(202, 204, 223);
+background: #bebecf;
+background: radial-gradient(circle, rgba(190, 190, 207, 1) 0%, rgba(98, 113, 161, 1) 14%, rgba(190, 190, 207, 1) 92%);
     padding: 80px;
 }
 
@@ -28,7 +29,7 @@
 
 .info-contenido {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
     color: #333;
     text-align: justify;
@@ -48,98 +49,4 @@
     border-radius: 6px;
     object-fit: cover;
 }
-
-/* Tablets y pantallas medianas */
-@media (max-width: 1024px) {
-    #sobre-nosotros {
-        padding: 60px 30px;
-    }
-
-    .info-imagen {
-        width: 400px;
-    }
-}
-
-/* Tablets pequeñas */
-@media (max-width: 768px) {
-    #sobre-nosotros {
-        padding: 40px 20px;
-    }
-
-    .info-contenedor-blanco {
-        max-width: 85%;
-        padding: 30px 25px;
-    }
-
-    .info-titulo {
-        font-size: 32px;
-        margin-bottom: 25px;
-        letter-spacing: 2px;
-    }
-
-    .info-contenido {
-        font-size: 16px;
-    }
-
-    .info-imagen {
-        float: none;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0 20px 0;
-        display: block;
-    }
-}
-
-/* Móviles grandes */
-@media (max-width: 480px) {
-    #sobre-nosotros {
-        padding: 30px 10px;
-    }
-
-    .info-contenedor-blanco {
-        max-width: 90%;
-        padding: 25px 20px;
-    }
-
-    .info-titulo {
-        font-size: 26px;
-        margin-bottom: 20px;
-        letter-spacing: 1.5px;
-    }
-
-    .info-contenido {
-        font-size: 15px;
-        line-height: 1.6;
-        text-align: left;
-    }
-
-    .info-imagen {
-        width: 100%;
-        margin: 0 0 15px 0;
-    }
-}
-
-/* Móviles pequeños */
-@media (max-width: 375px) {
-    #sobre-nosotros {
-        padding: 20px 8px;
-    }
-
-    .info-contenedor-blanco {
-        max-width: 95%;
-        padding: 20px 15px;
-    }
-
-    .info-titulo {
-        font-size: 22px;
-        margin-bottom: 15px;
-        letter-spacing: 1px;
-    }
-
-    .info-contenido {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
-
 
