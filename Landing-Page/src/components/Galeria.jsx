@@ -10,7 +10,7 @@ import patio from '../assets/patio.jpg';
 import '../styles/galeria.css';
 
 
-function GridExample() {
+function Galeria() {
     const cards = [
         {
             title: 'Actividades',
@@ -44,9 +44,9 @@ function GridExample() {
         },
     ];
   return (
-    <section className="galeria-container">
+    <section id="galeria">
       <h2 className="galeria-titulo">Sectores de nuestro establecimiento</h2>
-    <Row xs={1} md={3} className="g-4 galeria-row"> 
+    <Row xs={1} md={3} className="g-2 galeria-row"> 
       {cards.map((card, idx) => (
         <Col key={idx}>
           <Card className='galeria-card'>
