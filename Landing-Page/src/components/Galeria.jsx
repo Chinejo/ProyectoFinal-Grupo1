@@ -9,7 +9,6 @@ import mastil from '../assets/mastil.jpg';
 import patio from '../assets/patio.jpg';
 import '../styles/galeria.css';
 
-
 function GridExample() {
     const cards = [
         {
