@@ -11,12 +11,14 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .planes-titulo {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   font-size: 40px;
   color: #124567;
   font-weight: bold;
+  padding-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-decoration: underline;
@@ -27,7 +29,7 @@
 .planes-contenedor-turnos {
   font-family: Arial, sans-serif;
   border: 2px solid #918e8e2b;border-radius: 12px;
-  padding: 0 30px;
+  padding: 20px 30px;
   margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -123,7 +125,6 @@
   font-size: 14px;
 }
 
-/* Media Queries para Tabletas */
 @media (max-width: 1024px) {
   #info-planes {
     padding: 60px 40px;
@@ -140,7 +141,7 @@
   }
 
   .planes-contenedor-turnos {
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .planes-turnos {
@@ -256,7 +257,7 @@
   }
 
   .planes-contenedor-turnos {
-    padding: 0 10px;
+    padding: 20px;
   }
 
   .planes-turnos {
