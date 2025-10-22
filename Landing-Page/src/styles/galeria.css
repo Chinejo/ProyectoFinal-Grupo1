@@ -1,0 +1,72 @@
+section.galeria-container {
+  padding: 2rem;
+  text-align: center;
+}
+.galeria-titulo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Estilo base para cada tarjeta */
+.galeria-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Animación al pasar el mouse */
+.galeria-card hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la imagen superior */
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Texto centrado y con buen espaciado */
+.card-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Título con tamaño adaptable */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto descriptivo con buena legibilidad */
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive: ajustar columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+  .galeria-card {
+    max-width: 100%;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+}
