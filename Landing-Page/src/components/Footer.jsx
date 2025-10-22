@@ -6,17 +6,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Logo */}
         <div className="footer-section">
           <img src={logo} alt="Logo de la Escuela de Comercio República de Panamá" className="footer-logo" aria-hidden="true" />
         </div>
         
-        {/* Título */}
         <div className="footer-section">
           <h3>Escuela de Comercio República de Panamá</h3>
         </div>
         
-        {/* Redes Sociales */}
         <div className="footer-section">
           <div className="social-links">
             <OverlayTrigger placement="top" overlay={<Tooltip>Link a nuestra página de Facebook</Tooltip>}>
@@ -52,12 +49,10 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Dirección */}
         <div className="footer-section">
           <h4>Shipton y San juan, Concepción, Tucumán</h4>
         </div>
         
-        {/* Correo */}
         <div className="footer-section">
           <p>
             <a 
@@ -70,7 +65,6 @@ const Footer = () => {
           </p>
         </div>
         
-        {/* Copyright */}
         <div className="footer-bottom">
           <p>&copy; 2025 Grupo 1.</p>
         </div>

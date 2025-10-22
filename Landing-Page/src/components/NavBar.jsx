@@ -7,10 +7,8 @@ import '../styles/NavBar.css';
 function BasicExample() {
   return (
     <div className="navbar-wrapper">
-      {/* Navbar único con estructura personalizada */}
       <Navbar expand="lg" className="navbar-main bg-body-tertiary">
         <Container className="navbar-top-container">
-          {/* Sección Superior */}
           <Navbar.Brand href="#inicio" className="navbar-brand-section">
             <img
               src={Logo}
@@ -20,12 +18,9 @@ function BasicExample() {
             />
             <span className="navbar-title">Escuela de Comercio República de Panamá</span>
           </Navbar.Brand>
-
-          {/* Botón hamburguesa */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggle-mobile" />
         </Container>
 
-        {/* Sección Inferior - Menú */}
         <Navbar.Collapse id="basic-navbar-nav" className="navbar-menu-section">
           <Container>
             <Nav className="mx-auto navbar-nav-custom">

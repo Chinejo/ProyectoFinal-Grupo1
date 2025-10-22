@@ -172,7 +172,6 @@
   }
 }
 
-/* Media Queries para Móviles */
 @media (max-width: 768px) {
   #info-planes {
     padding: 40px 20px;
@@ -240,7 +239,6 @@
   }
 }
 
-/* Media Queries para Móviles pequeños */
 @media (max-width: 480px) {
   #info-planes {
     padding: 30px 15px;

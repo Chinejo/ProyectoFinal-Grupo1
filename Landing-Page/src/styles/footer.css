@@ -76,7 +76,7 @@
 }
 
 .contact-link:hover {
-    color: #85C1E9;  /* Azul más claro para el hover */
+    color: #85C1E9;
 }
 
 .footer-bottom {
@@ -91,7 +91,6 @@
     margin: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .footer {
         padding: 1.5rem 0;
