@@ -1,56 +1,72 @@
-#galeria {
-    background-color: #E6E9F0;
-    padding: 2rem;
-    font-family: 'Georgia', serif;
+section.galeria-container {
+  padding: 2rem;
+  text-align: center;
+}
+.galeria-titulo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600;
 }
 
-#galeria h2 {
-    text-align: center;
-    color: #2C3E50;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+/* Estilo base para cada tarjeta */
+.galeria-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: auto;
 }
 
-#galeria > p {
-    text-align: center;
-    color: #34495E;
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+/* Animación al pasar el mouse */
+.galeria-card hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-#galeria > section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+/* Estilo para la imagen superior */
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-#galeria div {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+/* Texto centrado y con buen espaciado */
+.card-body {
+  text-align: center;
+  padding: 1rem;
 }
 
-#galeria div:hover {
-    transform: translateY(-5px);
+/* Título con tamaño adaptable */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-#galeria img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+/* Texto descriptivo con buena legibilidad */
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
 }
 
-#galeria div p {
-    padding: 1rem;
-    text-align: center;
-    color: #2C3E50;
-    font-size: 1.1rem;
-    margin: 0;
+/* Responsive: ajustar columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+  .galeria-card {
+    max-width: 100%;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-img-top {
+    height: 150px;
+  }
 }
