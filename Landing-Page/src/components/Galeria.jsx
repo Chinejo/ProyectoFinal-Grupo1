@@ -63,4 +63,4 @@ function Galeria() {
   );
 }
 
-export default GridExample;
+export default Galeria;
