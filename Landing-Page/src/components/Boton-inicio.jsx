@@ -1,7 +1,9 @@
-const BotonInicio =() => {
+import React from 'react';
+import '../styles/style-boton-inicio.css';
 
+const BotonInicio = () => {
   return (
-    <button>
+    <button className="boton-inicio" type="button" aria-label="Ir al inicio">
       Inicio
     </button>
   );
