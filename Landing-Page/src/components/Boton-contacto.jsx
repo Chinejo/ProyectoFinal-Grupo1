@@ -1,28 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/style-boton-contacto.css';
 
 
 
 const BotonContacto = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggle = () => setOpen((v) => !v);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // TODO: handle form submit (send data, show success, etc.)
+    // For now we'll just close the form
+    setOpen(false);
+  };
+
   return (
     <div>
-      {/* Hidden checkbox controls the toggle (pure CSS). */}
-      <input
-        id="contact-toggle"
-        className="contact-toggle-checkbox"
-        type="checkbox"
-        aria-hidden="true"
-        style={{ position: 'absolute', left: '-9999px' }}
-      />
-
-      {/* Label acts as the floating button */}
-      <label htmlFor="contact-toggle" className="contact-toggle" role="button" aria-pressed="false">
+      {/* Button controls the toggle (React state). */}
+      <button
+        type="button"
+        className="contact-toggle"
+        aria-expanded={open}
+        aria-controls="contact-form"
+        onClick={toggle}
+      >
         <span className="icon" aria-hidden="true">✉️</span>
         <span>Contacto</span>
-      </label>
+      </button>
 
-      {/* The form placed immediately after the label so the adjacent sibling selector works. */}
-      <form className="contact-form" action="#" method="post" aria-hidden="true">
+      {/* The form is shown/hidden via the `show` class and aria-hidden updated. */}
+      <form
+        id="contact-form"
+        className={`contact-form ${open ? 'show' : ''}`}
+        action="#"
+        method="post"
+        aria-hidden={!open}
+        onSubmit={handleSubmit}
+      >
         <div className="field">
           <label htmlFor="name">Nombre</label>
           <input id="name" name="name" type="text" placeholder="Tu nombre" />

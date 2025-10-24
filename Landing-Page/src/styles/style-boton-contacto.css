@@ -20,8 +20,8 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.contact-toggle-checkbox:checked + .contact-toggle + .contact-form,
-.contact-toggle-checkbox:checked + .contact-toggle + .contact-form.show {
+.contact-toggle-checkbox:checked ~ .contact-form,
+.contact-toggle-checkbox:checked ~ .contact-form.show {
   display: block;
   opacity: 1;
   transform: translateY(0);
