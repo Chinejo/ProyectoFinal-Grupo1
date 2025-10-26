@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./components/NavBar.jsx"
+import Carrusel from './components/Carrusel.jsx'
 import SobreNosotros from './components/SobreNosotros.jsx'
 import OfertaAcademica from './components/OfertaAcademica.jsx'
 import Galeria from './components/Galeria.jsx'
