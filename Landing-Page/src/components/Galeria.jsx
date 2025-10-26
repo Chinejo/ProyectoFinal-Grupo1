@@ -1,6 +1,4 @@
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Container, Card, Col, Row } from 'react-bootstrap';
 import actividades from "../assets/actividades.jpg";
 import biblioteca from '../assets/biblioteca.jpg';
 import canchas from '../assets/cancha.jpg';
@@ -8,7 +6,6 @@ import escenario from '../assets/escenario.jpg';
 import mastil from '../assets/mastil.jpg';
 import patio from '../assets/patio.jpg';
 import '../styles/galeria.css';
-
 
 function Galeria() {
     const cards = [
@@ -24,7 +21,7 @@ function Galeria() {
         },
         {
             title: 'Canchas',
-            text: 'Espacio depotivo amplio.',
+            text: 'Espacio deportivo amplio.',
             imgSrc: canchas,
         },
         {
@@ -33,8 +30,8 @@ function Galeria() {
             imgSrc: escenario,
         },
         {
-            title: 'Mastil',
-            text: 'Simbolo de nuestra bandera.',
+            title: 'Mástil',
+            text: 'Símbolo de nuestra bandera.',
             imgSrc: mastil,
         },
         {
@@ -43,24 +40,31 @@ function Galeria() {
             imgSrc: patio,
         },
     ];
-  return (
-    <section id="galeria">
-      <h2 className="galeria-titulo">Sectores de nuestro establecimiento</h2>
-    <Row xs={1} md={3} className="g-2 galeria-row"> 
-      {cards.map((card, idx) => (
-        <Col key={idx}>
-          <Card className='galeria-card'>
-            <Card.Img variant="top" src={card.imgSrc}/>
-            <Card.Body>
-              <Card.Title>{card.title}</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-    </section>
-  );
+
+    return (
+        <section id="galeria" className="py-5">
+            <Container>
+                <h2 className="text-center mb-4">Sectores de nuestro establecimiento</h2>
+                <Row xs={1} sm={2} md={3} className="g-4">
+                    {cards.map((card, idx) => (
+                        <Col key={idx}>
+                            <Card className="h-100 galeria-card">
+                                <Card.Img 
+                                    variant="top" 
+                                    src={card.imgSrc} 
+                                    className="card-img-custom"
+                                />
+                                <Card.Body className="d-flex flex-column">
+                                    <Card.Title className="text-center">{card.title}</Card.Title>
+                                    <Card.Text className="text-center flex-grow-1">{card.text}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+        </section>
+    );
 }
 
 export default Galeria;
