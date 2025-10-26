@@ -1,25 +1,14 @@
 #info-planes {
   background-color: rgb(202, 204, 223);
-  padding: 80px
 }
 
 .planes-contenedor-blanco {
   background-color: seashell;
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 50px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .planes-titulo {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-  font-size: 40px;
   color: #124567;
-  font-weight: bold;
-  padding-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 3px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -28,255 +17,46 @@
 
 .planes-contenedor-turnos {
   font-family: Arial, sans-serif;
-  border: 2px solid #918e8e2b;border-radius: 12px;
-  padding: 20px 30px;
-  margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d4d1e8;
+  border: 2px solid rgba(145, 142, 142, 0.17);
 }
 
 .planes-turnos {
-  font-size: 20px;
   color: #313c78;
-  margin-bottom: 10px;
-  font-weight: 600;
-  padding-bottom: 10px;
 }
 
-.planes-contenedor-turnos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.planes-contenedor-turnos li {
-  margin-bottom: 20px;
-}
-
-.planes-contenedor-turnos article {
+#info-planes .accordion-item-custom {
   border: 2px solid #124567;
-  border-radius: 8px;
-  padding: 0;
-  overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
+  background-color: rgb(253, 253, 255);
 }
 
-.planes-contenedor-turnos article:hover {
+#info-planes .accordion-item-custom:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.planes-contenedor-turnos article h4 {
-  font-size: 18px;
+#info-planes .accordion-item-custom .accordion-button {
   color: rgb(4, 10, 59);
-  margin: 0;
-  padding: 12px 20px;
-  font-weight: 600;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: seashell;
 }
 
-.planes-contenedor-turnos article h4::after {
-  content: "⮝";
-  font-size: 16px;
+#info-planes .accordion-item-custom .accordion-button:not(.collapsed) {
+  background-color: seashell;
   color: rgb(4, 10, 59);
-  transition: transform 0.3s ease;
 }
 
-.planes-contenedor-turnos article.expandido h4::after {
-  transform: rotate(180deg);
-}
-
-.planes-descripción {
-  padding: 20px;
-  background-color: rgba(161, 165, 230, 0.144);
+.planes-descripcion-body {
+  background-color: rgba(10, 18, 164, 0.13);
   border-top: 2px solid #124567;
 }
 
-.planes-contenedor-turnos article p {
-  color: #555;
-  line-height: 1.6;
-  margin: 0 0 15px 0;
-  font-size: 15px;
+.planes-info-box {
+  background-color: #ffffffc1;
+  border-left: 4px solid #297fb9;
 }
 
-.planes-contenedor-turnos dl {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 8px 15px;
-  margin: 0;
-  padding: 15px;
-  background-color: seashell;
-  border-radius: 6px;
-  border-left: 4px solid #2980b9;
-}
-
-.planes-descripción dt {
-  font-weight: bold;
+.planes-dt {
   color: #3b5c7d;
-  font-size: 14px;
-}
-
-.planes-descripción dd {
-  margin: 0;
-  color: #555;
-  font-size: 14px;
-}
-
-@media (max-width: 1024px) {
-  #info-planes {
-    padding: 60px 40px;
-  }
-
-  .planes-contenedor-blanco {
-    max-width: 90%;
-    padding: 40px 30px;
-  }
-
-  .planes-titulo {
-    font-size: 32px;
-    letter-spacing: 2px;
-  }
-
-  .planes-contenedor-turnos {
-    padding: 20px;
-  }
-
-  .planes-turnos {
-    font-size: 18px;
-  }
-
-  .planes-contenedor-turnos article h4 {
-    font-size: 16px;
-    padding: 10px 15px;
-  }
-
-  .planes-descripción {
-    padding: 15px;
-  }
-
-  .planes-contenedor-turnos article p {
-    font-size: 14px;
-  }
-
-  .planes-contenedor-turnos dl {
-    padding: 12px;
-    gap: 6px 12px;
-  }
-
-  .planes-descripción dt,
-  .planes-descripción dd {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 768px) {
-  #info-planes {
-    padding: 40px 20px;
-  }
-
-  .planes-contenedor-blanco {
-    max-width: 95%;
-    padding: 30px 20px;
-  }
-
-  .planes-titulo {
-    font-size: 26px;
-    letter-spacing: 1.5px;
-    text-underline-offset: 3px;
-  }
-
-  .planes-contenedor-turnos {
-    padding: 0 15px;
-    margin-bottom: 20px;
-  }
-
-  .planes-turnos {
-    font-size: 16px;
-    padding-bottom: 8px;
-  }
-
-  .planes-contenedor-turnos article h4 {
-    font-size: 15px;
-    padding: 10px 12px;
-  }
-
-  .planes-contenedor-turnos article h4::after {
-    font-size: 14px;
-  }
-
-  .planes-descripción {
-    padding: 12px;
-  }
-
-  .planes-contenedor-turnos article p {
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 0 0 12px 0;
-  }
-
-  .planes-contenedor-turnos dl {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 10px;
-    border-left-width: 3px;
-  }
-
-  .planes-descripción dt {
-    font-size: 13px;
-    margin-top: 8px;
-  }
-
-  .planes-descripción dt:first-child {
-    margin-top: 0;
-  }
-
-  .planes-descripción dd {
-    font-size: 13px;
-    margin-bottom: 4px;
-  }
-}
-
-@media (max-width: 480px) {
-  #info-planes {
-    padding: 30px 15px;
-  }
-
-  .planes-contenedor-blanco {
-    max-width: 100%;
-    padding: 20px 15px;
-  }
-
-  .planes-titulo {
-    font-size: 22px;
-    letter-spacing: 1px;
-  }
-
-  .planes-contenedor-turnos {
-    padding: 20px;
-  }
-
-  .planes-turnos {
-    font-size: 15px;
-  }
-
-  .planes-contenedor-turnos article h4 {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-
-  .planes-descripción {
-    padding: 10px;
-  }
-
-  .planes-contenedor-turnos article p {
-    font-size: 12px;
-  }
-
-  .planes-descripción dt,
-  .planes-descripción dd {
-    font-size: 12px;
-  }
 }
