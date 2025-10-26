@@ -37,7 +37,7 @@ function NavBar() {
         <Navbar.Collapse id="navbar-nav">
           <Container fluid>
             <Row>
-              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-0">
                 <Nav.Link 
                   href="#sobre-nosotros" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
@@ -45,7 +45,7 @@ function NavBar() {
                   Sobre Nosotros
                 </Nav.Link>
               </Col>
-              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-0">
                 <Nav.Link 
                   href="#info-planes" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
@@ -53,7 +53,7 @@ function NavBar() {
                   Información de Planes
                 </Nav.Link>
               </Col>
-              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-0">
                 <Nav.Link 
                   href="#galeria" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
@@ -61,7 +61,7 @@ function NavBar() {
                   Galería
                 </Nav.Link>
               </Col>
-              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-0">
                 <Nav.Link 
                   href="#mapa-ubicacion" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
