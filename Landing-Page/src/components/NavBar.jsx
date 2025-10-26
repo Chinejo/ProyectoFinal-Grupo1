@@ -8,35 +8,55 @@ import '../styles/NavBar.css';
 
 function NavBar() {
   return (
-    <Navbar className="navbar-main" sticky="top">
-      <Row>
-        {/* Primer container: Logo y título hacia el lado izquierdo */}
-        <Container fluid>
-          <Navbar.Brand href="#inicio" className="navbar-brand-section d-flex align-items-center">
+    <Navbar className="navbar-main py-3" sticky="top">
+      <Row className="w-100">
+        <Container fluid className='pb-3'>
+          <Navbar.Brand href="#inicio" className="d-flex align-items-center px-3">
             <img
               src={Logo}
               alt="Logo de la Escuela de Comercio República de Panamá"
-              height="50"
-              className="navbar-logo m-3"
+              height="65"
+              className="m-3"
             />
-            <span className="navbar-title d-inline mb-0">Escuela de Comercio<br className="d-block d-md-none" /> República de Panamá</span>
+            <span className="navbar-title fw-bold d-inline mb-0">
+              Escuela de Comercio<br className="d-block d-md-none" /> República de Panamá
+            </span>
           </Navbar.Brand>
         </Container>
 
-        {/* Segundo container: Elementos del nav distribuidos uniformemente */}
         <Container fluid>
           <Row>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link href="#sobre-nosotros" className="nav-button">Sobre Nosotros</Nav.Link>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center pb-2">
+              <Nav.Link 
+                href="#sobre-nosotros" 
+                className="nav-button fw-bold px-4 py-2 rounded-pill border border-2 border-transparent text-center text-nowrap"
+              >
+                Sobre Nosotros
+              </Nav.Link>
             </Col>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link href="#info-planes" className="nav-button">Información de Planes</Nav.Link>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center pb-2">
+              <Nav.Link 
+                href="#info-planes" 
+                className="nav-button fw-bold px-4 py-2 rounded-pill border border-2 border-transparent text-center text-nowrap"
+              >
+                Información de Planes
+              </Nav.Link>
             </Col>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link href="#galeria" className="nav-button">Galería</Nav.Link>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center pb-2">
+              <Nav.Link 
+                href="#galeria" 
+                className="nav-button fw-bold px-4 py-2 rounded-pill border border-2 border-transparent text-center text-nowrap"
+              >
+                Galería
+              </Nav.Link>
             </Col>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link href="#mapa-ubicacion" className="nav-button">Ubicación</Nav.Link>
+            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center pb-2">
+              <Nav.Link 
+                href="#mapa-ubicacion" 
+                className="nav-button fw-bold px-4 py-2 rounded-pill border border-2 border-transparent text-center text-nowrap"
+              >
+                Ubicación
+              </Nav.Link>
             </Col>
           </Row>
         </Container>

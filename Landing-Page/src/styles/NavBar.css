@@ -1,30 +1,18 @@
 .navbar-main {
     background-color: #34495e !important;
-    padding: 1rem 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-.navbar-logo {
-    height: 65px;
-}
-
 .navbar-title {
-    font-weight: bold;
     font-size: clamp(1.6rem, 3vw, 1.8rem);
     color: white;
 }
 
 .nav-button {
     font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.3rem 1rem !important;
-    border-radius: 20px;
     background-color: #34495e;
     color: white !important;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
-    text-align: center;
-    white-space: nowrap;
 }
 
 .nav-button:hover {
