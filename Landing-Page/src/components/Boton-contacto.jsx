@@ -1,8 +1,6 @@
 const BotonContacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puede añadirse lógica para enviar el formulario
-    // Por ejemplo: fetch('/api/contact', { method: 'POST', body: new FormData(e.target) })
   };
 
   return (
