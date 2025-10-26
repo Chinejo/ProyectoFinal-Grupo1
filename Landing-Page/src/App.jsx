@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./components/NavBar.jsx"
 import SobreNosotros from './components/SobreNosotros.jsx'
 import OfertaAcademica from './components/OfertaAcademica.jsx'
-import Galeria from './components/Galeria.jsx'
 import MapaUbicacion from './components/Mapa-ubicacion.jsx'
 import BotonInicio from './components/Boton-inicio' 
 import BotonContacto from './components/Boton-contacto'
@@ -14,7 +13,6 @@ function App() {
       <NavBar />
       <SobreNosotros />
       <OfertaAcademica />
-      <Galeria />
       <MapaUbicacion />
       <BotonInicio />
       <BotonContacto />
