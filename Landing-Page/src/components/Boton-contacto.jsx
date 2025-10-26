@@ -1,5 +1,4 @@
-import React from 'react';
-import './Boton-contacto.css';
+import './boton-contacto.css';
 
 const BotonContacto = () => {
   const handleSubmit = (e) => {
