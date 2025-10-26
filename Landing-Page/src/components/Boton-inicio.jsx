@@ -1,31 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import { ArrowUp } from 'react-bootstrap-icons';
+import '../styles/boton-inicio.css';
 
-const ScrollToTopButton = () => {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const toggleVisibility = () => {
-      setVisible(window.scrollY > 300);
-    };
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  return visible && (
-    <Button
-      variant="primary"
-      onClick={scrollToTop}
-      className="scroll-to-top-btn"
-    >
-      <ArrowUp />
-    </Button>
+function BotonInicio() {
+  return (
+    <Container fluid className="position-fixed bottom-0 start-0 p-3">
+      <Row>
+        <Col xs="auto">
+          <Button
+            variant="primary"
+            href="#inicio"
+            className="boton-inicio rounded-circle d-flex align-items-center justify-content-center"
+          >
+            <ArrowUp size={24} />
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
-};
+}
 
-export default ScrollToTopButton;
+export default BotonInicio;

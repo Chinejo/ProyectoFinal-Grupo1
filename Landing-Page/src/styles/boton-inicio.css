@@ -1,11 +1,4 @@
-.scroll-to-top-btn {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.boton-inicio {
+  background-color: #4a5f7a !important;
+  border-color: #4a5f7a !important;
 }
