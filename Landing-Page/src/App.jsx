@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <Carrusel />
       <SobreNosotros />
       <OfertaAcademica />
       <Galeria />
