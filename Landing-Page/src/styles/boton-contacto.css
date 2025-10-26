@@ -1,125 +1,120 @@
-/* Botón de contacto flotante */
 .contacto-btn {
-  position: fixed;
+  position: fixed !important;
   left: 24px;
   bottom: 24px;
   z-index: 1000;
-  border-radius: 50px;
-  padding: 12px 24px;
-  background: #1976d2;
-  color: #fff;
-  border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50px !important;
+  padding: 12px 24px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
 }
 
 .contacto-btn:hover {
-  background: #1565c0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-2px);
 }
 
 .contacto-btn:active {
-  transform: scale(0.98);
+  transform: scale(0.98) !important;
 }
 
-/* Formulario de contacto */
 .formulario-contacto {
-  display: none;
   position: fixed;
   left: 24px;
   bottom: 80px;
   z-index: 1001;
-  background: #fff;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-  min-width: 320px;
+  min-width: 360px;
   max-width: 90vw;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18) !important;
+  animation: slideUp 0.3s ease-out;
 }
 
-.formulario-contacto.visible {
-  display: block;
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Formulario interno */
-.form-contacto {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-/* Grupos de campos del formulario */
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
+.formulario-contacto .card-title {
+  color: #1976d2;
   font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.formulario-contacto .card-body {
+  padding: 1.5rem;
+}
+
+.formulario-contacto .form-label {
+  font-weight: 600;
   color: #333;
-  font-size: 14px;
+  margin-bottom: 0.5rem;
 }
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 8px 12px;
+.formulario-contacto .form-control {
   border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  font-family: inherit;
-  transition: border-color 0.3s ease;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
+.formulario-contacto .form-control:focus {
   border-color: #1976d2;
-  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+  box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
 }
-
-.form-group textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-/* Botón de envío */
-.btn-enviar {
-  background: #1976d2;
-  color: #fff;
-  border: none;
+.formulario-contacto .btn {
   border-radius: 6px;
-  padding: 12px 24px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background 0.3s ease;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
 }
 
-.btn-enviar:hover {
-  background: #1565c0;
+.formulario-contacto .btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
 }
 
-.btn-enviar:active {
-  transform: scale(0.98);
+.formulario-contacto .btn-primary:hover {
+  background-color: #1565c0;
+  border-color: #1565c0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
 }
 
-/* Estilos responsivos */
-@media (max-width: 480px) {
+.formulario-contacto .btn-outline-secondary:hover {
+  transform: translateY(-1px);
+}
+
+.formulario-contacto .d-grid {
+  margin-top: 1rem;
+}
+@media (max-width: 576px) {
   .formulario-contacto {
     left: 12px;
     right: 12px;
     min-width: auto;
     max-width: none;
+    bottom: 70px;
   }
 
   .contacto-btn {
-    left: 12px;
+    left: 12px !important;
     bottom: 12px;
+    padding: 10px 20px !important;
+    font-size: 14px;
   }
+
+  .formulario-contacto .card-body {
+    padding: 1rem;
+  }
+}
+
+
+.formulario-contacto textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
 }
