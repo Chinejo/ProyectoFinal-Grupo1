@@ -1,98 +1,132 @@
 import React from 'react'
+import { Container, Accordion } from 'react-bootstrap'
 import '../styles/OfertaAcademica.css'
 
 function OfertaAcademica() {
   return (
-    <section id="info-planes">
-      <div className='planes-contenedor-blanco'>
-        <h2 className='planes-titulo'>OFERTA ACADÉMICA</h2>
-        <section className='planes-contenedor-turnos'>
-          <h3 className='planes-turnos'>Turno mañana y tarde:</h3>
-          <ul>
-            <li>
-              <article>
-                <h4>Ciencias Sociales</h4>
-                <div className='planes-descripción'>
-                  <p>Esta modalidad fomenta el pensamiento crítico, la comprensión histórica y el análisis de fenómenos sociales. Ideal para estudiantes interesados en la ciudadanía, la comunicación y el trabajo comunitario.</p> 
-                  <dl>
-                    <dt>Duración:</dt><dd>6 años</dd>
-                    <dt>Horarios:</dt><dd>De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd> 
-                    <dt>Edad:</dt><dd>De 12 años a 17 años</dd> 
-                    <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
-                  </dl>
-                </div>
-              </article>
-            </li>
+    <section id="info-planes" className="py-5">
+      <Container>
+        <div className="planes-contenedor-blanco rounded shadow p-4 p-md-5">
+          <h2 className="planes-titulo text-center fw-bold text-uppercase mb-4 pb-3">
+            OFERTA ACADÉMICA
+          </h2>
+          
+          <section className="planes-contenedor-turnos mb-4 border rounded p-3 p-md-4">
+            <h3 className="planes-turnos h5 fw-semibold mb-3 pb-2">Turno mañana y tarde:</h3>
+            <Accordion>
+              <Accordion.Item eventKey="0" className="accordion-item-custom mb-3 border-2 rounded overflow-hidden">
+                <Accordion.Header className="fw-semibold">Ciencias Sociales</Accordion.Header>
+                <Accordion.Body className="planes-descripcion-body p-3 p-md-4">
+                  <p className="text-dark mb-3 lh-base">
+                    Esta modalidad fomenta el pensamiento crítico, la comprensión histórica y el análisis de fenómenos sociales. Ideal para estudiantes interesados en la ciudadanía, la comunicación y el trabajo comunitario.
+                  </p> 
+                  <div className="planes-info-box rounded p-3">
+                    <dl className="row g-2 mb-0">
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Duración:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">6 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Horarios:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Edad:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">De 12 años a 17 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Alcance:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Nacional y Mercosur</dd>
+                    </dl>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
 
-            <li>
-              <article>
-                <h4>Ciencias Naturales</h4>
-                <div className='planes-descripción'>
-                  <p>Esta modalidad promueve el desarrollo del pensamiento lógico y científico a través del estudio de la biología, química, física y matemática. Está orientada a estudiantes con interés en la investigación, el medio ambiente y las ciencias aplicadas.</p> 
-                  <dl>
-                    <dt>Duración:</dt><dd>6 años</dd>
-                    <dt>Horarios:</dt><dd>De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd> 
-                    <dt>Edad:</dt><dd>De 12 años a 17 años</dd> 
-                    <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
-                  </dl>
-                </div>
-              </article>
-            </li>
+              <Accordion.Item eventKey="1" className="accordion-item-custom mb-3 border-2 rounded overflow-hidden">
+                <Accordion.Header className="fw-semibold">Ciencias Naturales</Accordion.Header>
+                <Accordion.Body className="planes-descripcion-body p-3 p-md-4">
+                  <p className="text-dark mb-3 lh-base">
+                    Esta modalidad promueve el desarrollo del pensamiento lógico y científico a través del estudio de la biología, química, física y matemática. Está orientada a estudiantes con interés en la investigación, el medio ambiente y las ciencias aplicadas.
+                  </p> 
+                  <div className="planes-info-box rounded p-3">
+                    <dl className="row g-2 mb-0">
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Duración:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">6 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Horarios:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Edad:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">De 12 años a 17 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Alcance:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Nacional y Mercosur</dd>
+                    </dl>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
 
-            <li>
-              <article>
-                <h4>Economía</h4>
-                <div className='planes-descripción'>
-                  <p>Esta orientación introduce a los estudiantes en el mundo de la administración, la contabilidad y las finanzas. Se enfoca en el desarrollo de habilidades organizativas, análisis económico y gestión de recursos.</p> 
-                  <dl>
-                    <dt>Duración:</dt><dd>6 años</dd>
-                    <dt>Horarios:</dt><dd>De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd> 
-                    <dt>Edad:</dt><dd>De 12 años a 17 años</dd> 
-                    <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
-                  </dl>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </section>
+              <Accordion.Item eventKey="2" className="accordion-item-custom mb-3 border-2 rounded overflow-hidden">
+                <Accordion.Header className="fw-semibold">Economía</Accordion.Header>
+                <Accordion.Body className="planes-descripcion-body p-3 p-md-4">
+                  <p className="text-dark mb-3 lh-base">
+                    Esta orientación introduce a los estudiantes en el mundo de la administración, la contabilidad y las finanzas. Se enfoca en el desarrollo de habilidades organizativas, análisis económico y gestión de recursos.
+                  </p> 
+                  <div className="planes-info-box rounded p-3">
+                    <dl className="row g-2 mb-0">
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Duración:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">6 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Horarios:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">De 08:00 a 12:00 en la mañana y de 14:00 a 18:00 en la tarde</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Edad:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">De 12 años a 17 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Alcance:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Nacional y Mercosur</dd>
+                    </dl>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </section>
 
-        <section className='planes-contenedor-turnos'>
-          <h3 className='planes-turnos'>Turno noche:</h3>
-          <ul>
-            <li>
-              <article>
-                <h4>Economía (Integrado)</h4>
-                <div className='planes-descripción'>
-                  <p>Modalidad pensada para jóvenes menores de 17 años cumplidos al 30 de junio. Ofrece formación en ciencias económicas y administración, con un plan de estudios adaptado a sus necesidades.</p>
-                  <dl>
-                    <dt>Duración:</dt><dd>4 años</dd>
-                    <dt>Horarios:</dt><dd>19:45 a 00:00</dd> 
-                    <dt>Edad:</dt><dd>Menores a 17 años</dd> 
-                    <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
-                  </dl>
-                </div>
+          <section className="planes-contenedor-turnos mb-0 border rounded p-3 p-md-4">
+            <h3 className="planes-turnos h5 fw-semibold mb-3 pb-2">Turno noche:</h3>
+            <Accordion>
+              <Accordion.Item eventKey="0" className="accordion-item-custom mb-3 border-2 rounded overflow-hidden">
+                <Accordion.Header className="fw-semibold">Economía (Integrado)</Accordion.Header>
+                <Accordion.Body className="planes-descripcion-body p-3 p-md-4">
+                  <p className="text-dark mb-3 lh-base">
+                    Modalidad pensada para jóvenes menores de 17 años cumplidos al 30 de junio. Ofrece formación en ciencias económicas y administración, con un plan de estudios adaptado a sus necesidades.
+                  </p>
+                  <div className="planes-info-box rounded p-3">
+                    <dl className="row g-2 mb-0">
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Duración:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">4 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Horarios:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">19:45 a 00:00</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Edad:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Menores a 17 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Alcance:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Nacional y Mercosur</dd>
+                    </dl>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
 
-              </article>
-            </li>
-
-            <li>
-              <article>
-                <h4>Economía (Integrado +17 años)</h4>
-                <div className='planes-descripción'>
-                  <p>Diseñada para personas mayores de 17 años cumplidos al 30 de junio, esta modalidad brinda una formación sólida en economía y gestión, con un enfoque práctico y flexible.</p>
-                  <dl>
-                    <dt>Duración:</dt><dd>4 años</dd>
-                    <dt>Horarios:</dt><dd>19:45 a 00:00</dd> 
-                    <dt>Edad:</dt><dd>Mayores a 17 años</dd> 
-                    <dt>Alcance:</dt> <dd>Nacional y Mercosur</dd>
-                  </dl>
-                </div>
-                
-              </article>
-            </li>
-          </ul>
-        </section>
-      </div>
+              <Accordion.Item eventKey="1" className="accordion-item-custom mb-3 border-2 rounded overflow-hidden">
+                <Accordion.Header className="fw-semibold">Economía (Integrado +17 años)</Accordion.Header>
+                <Accordion.Body className="planes-descripcion-body p-3 p-md-4">
+                  <p className="text-dark mb-3 lh-base">
+                    Diseñada para personas mayores de 17 años cumplidos al 30 de junio, esta modalidad brinda una formación sólida en economía y gestión, con un enfoque práctico y flexible.
+                  </p>
+                  <div className="planes-info-box rounded p-3">
+                    <dl className="row g-2 mb-0">
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Duración:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">4 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Horarios:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">19:45 a 00:00</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Edad:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Mayores a 17 años</dd>
+                      <dt className="col-12 col-sm-4 col-md-3 planes-dt fw-bold">Alcance:</dt>
+                      <dd className="col-12 col-sm-8 col-md-9 text-dark">Nacional y Mercosur</dd>
+                    </dl>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </section>
+        </div>
+      </Container>
     </section>
   )
 }
