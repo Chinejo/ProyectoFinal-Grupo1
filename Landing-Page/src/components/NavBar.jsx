@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { List } from 'react-bootstrap-icons';
 import Logo from '../assets/LogoEscolar.jpg';
 import '../styles/NavBar.css';
 
@@ -25,8 +26,10 @@ function NavBar() {
                 </span>
               </Navbar.Brand>
             </Col>
-            <Col xs={2} className="d-lg-none d-flex justify-content-end pe-3">
-              <Navbar.Toggle aria-controls="navbar-nav" className="btn-sm bg-transparent border-0 text-white" />
+            <Col xs={2} className="d-lg-none d-flex justify-content-end pe-1">
+              <Navbar.Toggle aria-controls="navbar-nav" className="btn-sm bg-transparent border-0 text-white">
+                <List size={30} color="white" />
+              </Navbar.Toggle>
             </Col>
           </Row>
         </Container>
@@ -34,7 +37,7 @@ function NavBar() {
         <Navbar.Collapse id="navbar-nav">
           <Container fluid>
             <Row>
-              <Col xxl={3} xl={3} lg={3} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
                 <Nav.Link 
                   href="#sobre-nosotros" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
@@ -42,7 +45,7 @@ function NavBar() {
                   Sobre Nosotros
                 </Nav.Link>
               </Col>
-              <Col xxl={3} xl={3} lg={3} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
                 <Nav.Link 
                   href="#info-planes" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
@@ -50,7 +53,7 @@ function NavBar() {
                   Información de Planes
                 </Nav.Link>
               </Col>
-              <Col xxl={3} xl={3} lg={3} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
                 <Nav.Link 
                   href="#galeria" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
@@ -58,7 +61,7 @@ function NavBar() {
                   Galería
                 </Nav.Link>
               </Col>
-              <Col xxl={3} xl={3} lg={3} xs={12} className="d-flex justify-content-center py-1">
+              <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className="d-flex justify-content-center py-1">
                 <Nav.Link 
                   href="#mapa-ubicacion" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
