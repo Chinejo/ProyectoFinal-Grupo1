@@ -1,0 +1,44 @@
+.fs-7 {
+  font-size: 0.875rem;
+}
+
+.carousel-full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.carousel-image-height {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption-animated {
+  opacity: 0;
+  animation: fadeInCaption 0.8s ease-in-out 1s forwards;
+}
+
+@keyframes fadeInCaption {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-item-next .carousel-caption-animated,
+.carousel-item-prev .carousel-caption-animated {
+  opacity: 0;
+  animation: fadeInCaption 0.8s ease-in-out 1s forwards;
+}
+
+.carousel-caption-center {
+  top: 50%;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  transform: translateY(-50%) !important;
+  background-color: rgba(0, 0, 0, 0.299);
+}
