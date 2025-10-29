@@ -7,17 +7,19 @@
   width: 60px;
   height: 60px;
   border: none;
+  border-radius: 50%;
   background-color: #4a5f7a;
   transition: all 0.3s ease;
 }
 
 .boton-contacto:hover {
   transform: translateY(-3px) scale(1.05);
-  background-color: #5e7389;
+  background-color: #5a6f8a;
 }
 
 .boton-contacto:active {
-  transform: scale(0.95);;
+  transform: scale(0.95);
+  background-color: #5a6f8a; 
 }
 
 .offcanvas-contacto {
@@ -48,20 +50,20 @@
 
 .offcanvas-contacto .btn-primary {
   background-color: #4a5f7a;
-  border-color: #4a5f7a;
+  border-color: #4a5f7a;;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .offcanvas-contacto .btn-primary:hover {
   background-color: #4a5f7a;
-  border-color: #4a5f7a;
+  border-color: #4a5f7a;;
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(25, 118, 210, 0.3);
 }
 
 .offcanvas-contacto .btn-primary:active {
-  transform: translateY(0);
+  transform: translateY(0);;
 }
 
 .offcanvas-contacto textarea.form-control {
