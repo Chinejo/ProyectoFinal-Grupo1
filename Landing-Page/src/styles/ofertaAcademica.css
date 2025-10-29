@@ -1,14 +1,11 @@
-#info-planes {
-  background-color: rgb(202, 204, 223);
-}
-
 .planes-contenedor-blanco {
   background-color: seashell;
 }
 
 .planes-titulo {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #124567;
+  font-size: clamp(1.75rem, 4vw, 2.8rem);
+  color: #1d2659;
   letter-spacing: 3px;
   text-decoration: underline;
   text-decoration-thickness: 2px;

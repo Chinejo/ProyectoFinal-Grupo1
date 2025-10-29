@@ -4,7 +4,7 @@ import '../styles/OfertaAcademica.css'
 
 function OfertaAcademica() {
   return (
-    <section id="info-planes" className="py-5">
+    <section id="info-planes" className="py-4">
       <Container>
         <div className="planes-contenedor-blanco rounded shadow p-4 p-md-5">
           <h2 className="planes-titulo text-center fw-bold text-uppercase mb-4 pb-3">
