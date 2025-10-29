@@ -1,5 +1,10 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "bootstrap": "^5.3.8"
+=======
+    "bootstrap": "^5.3.8",
+    "react-bootstrap": "^2.10.10"
+>>>>>>> dc44381bf7c879c8f69781212362baf70ba2eb7b
   }
 }

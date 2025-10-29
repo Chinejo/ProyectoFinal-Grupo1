@@ -1,0 +1,62 @@
+#info-planes {
+  background-color: rgb(202, 204, 223);
+}
+
+.planes-contenedor-blanco {
+  background-color: seashell;
+}
+
+.planes-titulo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #124567;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.planes-contenedor-turnos {
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d4d1e8;
+  border: 2px solid rgba(145, 142, 142, 0.17);
+}
+
+.planes-turnos {
+  color: #313c78;
+}
+
+#info-planes .accordion-item-custom {
+  border: 2px solid #124567;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: rgb(253, 253, 255);
+}
+
+#info-planes .accordion-item-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#info-planes .accordion-item-custom .accordion-button {
+  color: rgb(4, 10, 59);
+  background-color: seashell;
+}
+
+#info-planes .accordion-item-custom .accordion-button:not(.collapsed) {
+  background-color: seashell;
+  color: rgb(4, 10, 59);
+}
+
+.planes-descripcion-body {
+  background-color: rgba(10, 18, 164, 0.13);
+  border-top: 2px solid #124567;
+}
+
+.planes-info-box {
+  background-color: #ffffffc1;
+  border-left: 4px solid #297fb9;
+}
+
+.planes-dt {
+  color: #3b5c7d;
+}
