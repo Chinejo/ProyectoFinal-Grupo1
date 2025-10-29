@@ -1,3 +1,13 @@
+#galeria h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    color: #1d2659;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
 .galeria-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
