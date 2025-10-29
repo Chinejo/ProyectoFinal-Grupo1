@@ -3,8 +3,20 @@
   border-color: #4a5f7a !important;
 }
 .boton-inicio {
-  width: 50px;
-  height: 50px;
+ width: 55px;
+  height: 55px;
   border-radius: 50% !important;
   padding: 0;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.position-fixed.bottom-0.start-0 {
+  z-index: 99999 !important;
+  pointer-events: none !important;
+}
+
+.position-fixed.bottom-0.start-0 * {
+  pointer-events: auto !important;
 }
