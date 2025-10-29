@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import escuelaImg from '../assets/escuela.jpeg'
 import '../styles/SobreNosotros.css'
