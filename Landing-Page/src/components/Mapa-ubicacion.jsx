@@ -1,12 +1,11 @@
-
 import { Container } from 'react-bootstrap';
 import '../styles/mapaubi.css';
 
 const MapaUbicacion = () => {
   return (
-    <Container fluid className="py-5 bg-light" id="mapa-ubicacion">
+    <Container fluid className="py-5" id="mapa-ubicacion">
       <Container>
-        <h2 className="text-center display-5 mb-4">¿Dónde estamos?</h2>
+        <h2 className="text-center fw-bold text-uppercase mb-4 pb-3">¿DÓNDE ESTAMOS?</h2>
         <div className="d-flex justify-content-center">
           <div className="map-wrapper position-relative w-100" style={{ maxWidth: '1200px', height: '60vh', minHeight: '300px', maxHeight: '600px' }}>
             <iframe

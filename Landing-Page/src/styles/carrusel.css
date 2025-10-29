@@ -3,13 +3,15 @@
 }
 
 .carousel-full-width {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .carousel-image-height {
   height: 500px;
   object-fit: cover;
+  width: 100%;
 }
 
 .carousel-caption-animated {
