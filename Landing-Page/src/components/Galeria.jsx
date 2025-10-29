@@ -42,7 +42,7 @@ function Galeria() {
     ];
 
     return (
-        <section id="galeria" className="py-5">
+        <section id="galeria" className="py-4">
             <Container>
                 <h2 className="text-center fw-bold text-uppercase mb-4 pb-3">SECTORES DE NUESTRO ESTABLECIMIENTO</h2>
                 <Row xs={1} sm={2} md={3} className="g-4">

@@ -5,7 +5,7 @@ import '../styles/SobreNosotros.css'
 
 function SobreNosotros() {
   return (
-    <section id="sobre-nosotros" className="py-5">
+    <section id="sobre-nosotros" className="pt-5 pb-4">
       <Container>
         <div className='info-contenedor-blanco rounded shadow-sm p-4 p-md-5'>
           <h2 className='info-titulo text-center fw-bold text-uppercase mb-3 mb-md-4'>

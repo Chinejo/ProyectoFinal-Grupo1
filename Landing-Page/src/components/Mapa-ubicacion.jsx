@@ -3,7 +3,7 @@ import '../styles/mapaubi.css';
 
 const MapaUbicacion = () => {
   return (
-    <Container fluid className="py-5" id="mapa-ubicacion">
+    <Container fluid className="pt-4 pb-5" id="mapa-ubicacion">
       <Container>
         <h2 className="text-center fw-bold text-uppercase mb-4 pb-3">¿DÓNDE ESTAMOS?</h2>
         <div className="d-flex justify-content-center">
