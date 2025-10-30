@@ -1,5 +1,5 @@
 import logo from "../assets/LogoEscolar.jpg"
-import '../styles/Footer.css';
+import '../styles/footer.css';
 import { Instagram, Facebook } from 'react-bootstrap-icons';
 import { OverlayTrigger, Tooltip, Container, Row, Col } from 'react-bootstrap';
 

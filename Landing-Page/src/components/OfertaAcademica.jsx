@@ -1,5 +1,5 @@
 import { Container, Accordion } from 'react-bootstrap'
-import '../styles/OfertaAcademica.css'
+import '../styles/ofertaAcademica.css'
 
 function OfertaAcademica() {
   return (

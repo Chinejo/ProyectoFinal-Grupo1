@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { List } from 'react-bootstrap-icons';
 import Logo from '../assets/LogoEscolar.jpg';
-import '../styles/NavBar.css';
+import '../styles/navBar.css';
 
 function NavBar() {
   return (
