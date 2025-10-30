@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import '../styles/Carrusel.css';
+import '../styles/carrusel.css';
 import maratonDeLectura from '../assets/maratonDeLectura.jpg';
 import feriaDeCiencias from '../assets/feriaDeCiencias.jpg';
 import olimpiadaAtacalar from '../assets/olimpiadaAtacalar.jpg';
