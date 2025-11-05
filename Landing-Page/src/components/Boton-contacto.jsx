@@ -16,8 +16,11 @@ const BotonContacto = () => {
 
   return (
     <>
-      <Container fluid className="position-fixed bottom-0 end-0 contact-container">
-        <Row className="justify-content-end">
+      <Container
+        fluid
+        className="position-fixed bottom-0 end-0 p-3 contact-container"
+      >
+  <Row className="justify-content-end">
           <Col xs="auto">
             <Button
               variant="primary"
@@ -30,10 +33,10 @@ const BotonContacto = () => {
         </Row>
       </Container>
 
-      <Offcanvas 
+      <Offcanvas
         show={show}
         onHide={handleClose}
-        placement="end" 
+        placement="end"
         className="offcanvas-contacto"
         backdrop={true}
         scroll={false}
@@ -48,9 +51,9 @@ const BotonContacto = () => {
                 <Form>
                   <Form.Group className="mb-3" controlId="formNombre">
                     <Form.Label>Nombre</Form.Label>
-                    <Form.Control 
-                      type="text" 
-                      placeholder="Ingresa tu nombre" 
+                    <Form.Control
+                      type="text"
+                      placeholder="Ingresa tu nombre"
                       name="nombre"
                       required
                     />
@@ -58,9 +61,9 @@ const BotonContacto = () => {
 
                   <Form.Group className="mb-3" controlId="formEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control 
-                      type="email" 
-                      placeholder="Ingresa tu email" 
+                    <Form.Control
+                      type="email"
+                      placeholder="Ingresa tu email"
                       name="email"
                       required
                     />
@@ -68,9 +71,9 @@ const BotonContacto = () => {
 
                   <Form.Group className="mb-3" controlId="formCelular">
                     <Form.Label>Celular</Form.Label>
-                    <Form.Control 
-                      type="tel" 
-                      placeholder="Ingresa tu celular" 
+                    <Form.Control
+                      type="tel"
+                      placeholder="Ingresa tu celular"
                       name="celular"
                       required
                     />
@@ -78,10 +81,10 @@ const BotonContacto = () => {
 
                   <Form.Group className="mb-3" controlId="formMensaje">
                     <Form.Label>Mensaje</Form.Label>
-                    <Form.Control 
-                      as="textarea" 
-                      rows={4} 
-                      placeholder="Escribe tu mensaje" 
+                    <Form.Control
+                      as="textarea"
+                      rows={4}
+                      placeholder="Escribe tu mensaje"
                       name="mensaje"
                       required
                     />

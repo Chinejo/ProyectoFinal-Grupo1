@@ -1,25 +1,36 @@
 .contact-container {
-  z-index: 1050;
-  padding: 1.5rem;
+  z-index: 99999 !important;
+  pointer-events: none !important;
+}
+
+.contact-container .row,
+.contact-container .col {
+  pointer-events: none !important;
 }
 
 .boton-contacto {
-  width: 60px;
-  height: 60px;
-  border: none;
-  border-radius: 50%;
-  background-color: #4a5f7a;
-  transition: all 0.3s ease;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border-radius: 50% !important;
+  background-color: #4a5f7a !important;
+  border-color: #4a5f7a !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .boton-contacto:hover {
-  transform: translateY(-3px) scale(1.05);
-  background-color: #5a6f8a;
+  transform: scale(1.05);
+  background-color: #5a6f8a !important;
+  border-color: #5a6f8a !important;
 }
 
 .boton-contacto:active {
   transform: scale(0.95);
-  background-color: #5a6f8a; 
+  background-color: #5a6f8a !important; 
+  border-color: #5a6f8a !important;
 }
 
 .offcanvas-contacto {
