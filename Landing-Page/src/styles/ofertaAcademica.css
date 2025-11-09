@@ -4,7 +4,7 @@
 
 .planes-titulo {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: clamp(1.75rem, 4vw, 2.8rem);
+  font-size: clamp(1.75rem, 2.5vw + 0.5rem, 3rem);
   color: #1d2659;
   letter-spacing: 3px;
   text-decoration: underline;
@@ -17,10 +17,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #d4d1e8;
   border: 2px solid rgba(145, 142, 142, 0.17);
+  font-size: clamp(1rem, 1vw + 0.2rem, 1.25rem);
 }
 
 .planes-turnos {
   color: #313c78;
+  font-size: clamp(1.1rem, 1.2vw + 0.2rem, 1.4rem);
 }
 
 #info-planes .accordion-item-custom {
@@ -37,6 +39,7 @@
 #info-planes .accordion-item-custom .accordion-button {
   color: rgb(4, 10, 59);
   background-color: seashell;
+  font-size: clamp(1rem, 1vw + 0.2rem, 1.25rem);
 }
 
 #info-planes .accordion-item-custom .accordion-button:not(.collapsed) {
@@ -47,6 +50,7 @@
 .planes-descripcion-body {
   background-color: rgba(10, 18, 164, 0.13);
   border-top: 2px solid #124567;
+  font-size: clamp(0.95rem, 1vw + 0.15rem, 1.2rem);
 }
 
 .planes-info-box {
@@ -56,4 +60,5 @@
 
 .planes-dt {
   color: #3b5c7d;
+  font-size: clamp(1rem, 1vw + 0.2rem, 1.25rem);
 }

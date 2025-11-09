@@ -1,0 +1,61 @@
+@media screen and (min-width: 2560px) {
+  :root {
+    font-size: 18px;
+  }
+  
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  :root {
+    font-size: 20px;
+  }
+  
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+  .info-titulo,
+  .planes-titulo,
+  #galeria h2,
+  #mapa-ubicacion h2 {
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@media print {
+  :root {
+    font-size: 12pt;
+  }
+  
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
