@@ -6,8 +6,10 @@ import escenario from '../assets/escenario.jpg';
 import mastil from '../assets/mastil.jpg';
 import patio from '../assets/patio.jpg';
 import '../styles/galeria.css';
+import { useFontSizes } from '../context/FontSizeContext';
 
 function Galeria() {
+    const fontSizes = useFontSizes();
     const cards = [
         {
             title: 'Actividades',
@@ -44,7 +46,7 @@ function Galeria() {
     return (
         <section id="galeria" className="py-4">
             <Container>
-                <h2 className="text-center fw-bold text-uppercase mb-4 pb-3">SECTORES DE NUESTRO ESTABLECIMIENTO</h2>
+                <h2 className="text-center fw-bold text-uppercase mb-4 pb-3" style={{ fontSize: fontSizes.galeriaTitle, wordBreak: 'break-word', hyphens: 'auto' }}>SECTORES DE NUESTRO ESTABLECIMIENTO</h2>
                 <Row xs={1} sm={2} md={3} className="g-4">
                     {cards.map((card, idx) => (
                         <Col key={idx}>
@@ -55,8 +57,8 @@ function Galeria() {
                                     className="card-img-custom"
                                 />
                                 <Card.Body className="d-flex flex-column">
-                                    <Card.Title className="text-center">{card.title}</Card.Title>
-                                    <Card.Text className="text-center flex-grow-1">{card.text}</Card.Text>
+                                    <Card.Title className="text-center" style={{ fontSize: fontSizes.galeriaCardTitle }}>{card.title}</Card.Title>
+                                    <Card.Text className="text-center flex-grow-1" style={{ fontSize: fontSizes.galeriaCardText }}>{card.text}</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>

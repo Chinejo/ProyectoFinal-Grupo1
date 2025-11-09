@@ -6,8 +6,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import { List } from 'react-bootstrap-icons';
 import Logo from '../assets/LogoEscolar.jpg';
 import '../styles/navBar.css';
+import { useFontSizes } from '../context/FontSizeContext';
 
 function NavBar() {
+  const fontSizes = useFontSizes();
+
   return (
     <Navbar expand="lg" className="navbar-main py-1" sticky="top">
       <Row className="w-100">
@@ -21,7 +24,7 @@ function NavBar() {
                   height="50"
                   className="m-2"
                 />
-                <span className="navbar-title fw-bold d-inline mb-0">
+                <span className="navbar-title fw-bold d-inline mb-0" style={{ fontSize: fontSizes.navbarTitle }}>
                   Escuela de Comercio<br className="d-block d-md-none" /> República de Panamá
                 </span>
               </Navbar.Brand>
@@ -41,6 +44,7 @@ function NavBar() {
                 <Nav.Link 
                   href="#sobre-nosotros" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
+                  style={{ fontSize: fontSizes.navbarLink }}
                 >
                   Sobre Nosotros
                 </Nav.Link>
@@ -49,6 +53,7 @@ function NavBar() {
                 <Nav.Link 
                   href="#info-planes" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
+                  style={{ fontSize: fontSizes.navbarLink }}
                 >
                   Información de Planes
                 </Nav.Link>
@@ -57,6 +62,7 @@ function NavBar() {
                 <Nav.Link 
                   href="#galeria" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
+                  style={{ fontSize: fontSizes.navbarLink }}
                 >
                   Galería
                 </Nav.Link>
@@ -65,6 +71,7 @@ function NavBar() {
                 <Nav.Link 
                   href="#mapa-ubicacion" 
                   className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
+                  style={{ fontSize: fontSizes.navbarLink }}
                 >
                   Ubicación
                 </Nav.Link>

@@ -1,5 +1,5 @@
 .fs-7 {
-  font-size: clamp(0.875rem, 1vw, 1.1rem);
+  font-size: 0.875rem;
 }
 
 .carousel-full-width {
@@ -43,12 +43,4 @@
   max-width: 100%;
   transform: translateY(-50%) !important;
   background-color: rgba(0, 0, 0, 0.299);
-}
-
-.carousel-caption h5 {
-  font-size: clamp(1.25rem, 2vw + 0.5rem, 2.5rem);
-}
-
-.carousel-caption p {
-  font-size: clamp(1rem, 1.2vw + 0.3rem, 1.5rem);
 }

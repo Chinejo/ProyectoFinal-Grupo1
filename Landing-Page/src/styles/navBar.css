@@ -4,12 +4,10 @@
 }
 
 .navbar-title {
-    font-size: clamp(1.1rem, 1.5vw + 0.3rem, 2rem);
     color: white;
 }
 
 .nav-button {
-    font-size: clamp(0.9rem, 1vw + 0.2rem, 1.3rem);
     background-color: #34495e;
     color: white !important;
     transition: all 0.3s ease;

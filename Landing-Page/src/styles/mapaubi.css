@@ -1,6 +1,5 @@
 #mapa-ubicacion h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: clamp(1.75rem, 2.5vw + 0.5rem, 3rem);
     color: #1d2659;
     letter-spacing: 3px;
     text-decoration: underline;

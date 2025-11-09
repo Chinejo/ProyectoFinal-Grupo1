@@ -1,16 +1,12 @@
 .boton-inicio {
   background-color: #4a5f7a !important;
   border-color: #4a5f7a !important;
-}
-.boton-inicio {
- width: 55px;
-  height: 55px;
   border-radius: 50% !important;
   padding: 0;
   z-index: 99999 !important;
   pointer-events: auto !important;
   cursor: pointer !important;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 .boton-inicio:hover {

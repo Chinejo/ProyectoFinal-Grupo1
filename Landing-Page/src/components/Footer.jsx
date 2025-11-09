@@ -2,10 +2,13 @@ import logo from "../assets/LogoEscolar.jpg"
 import '../styles/footer.css';
 import { Instagram, Facebook } from 'react-bootstrap-icons';
 import { OverlayTrigger, Tooltip, Container, Row, Col } from 'react-bootstrap';
+import { useFontSizes } from '../context/FontSizeContext';
 
 const Footer = () => {
+  const fontSizes = useFontSizes();
+
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ fontSize: fontSizes.footerText }}>
       <Container className="px-3">
         <Row className="justify-content-center">
           <Col xs={12} className="mb-2 text-center">
@@ -15,7 +18,7 @@ const Footer = () => {
         
         <Row className="justify-content-center">
           <Col xs={12} md={10} lg={8} className="mb-2 text-center">
-            <h3 className="m-0 fw-semibold">Escuela de Comercio República de Panamá</h3>
+            <h3 className="m-0 fw-semibold" style={{ fontSize: fontSizes.footerTitle }}>Escuela de Comercio República de Panamá</h3>
           </Col>
         </Row>
         
@@ -61,13 +64,13 @@ const Footer = () => {
         
         <Row className="justify-content-center">
           <Col xs={12} md={10} lg={8} className="mb-2 text-center">
-            <h4 className="m-0 fw-normal">Shipton y San juan, Concepción, Tucumán</h4>
+            <h4 className="m-0 fw-normal" style={{ fontSize: fontSizes.footerSubtitle }}>Shipton y San juan, Concepción, Tucumán</h4>
           </Col>
         </Row>
         
         <Row className="justify-content-center">
           <Col xs={12} className="mb-2 text-center">
-            <p className="m-0">
+            <p className="m-0" style={{ fontSize: fontSizes.footerText }}>
               <a 
                 href="mailto:esccomreppanama@gmail.com"
                 aria-label="Envíanos un correo electrónico"
@@ -81,7 +84,7 @@ const Footer = () => {
         
         <Row className="justify-content-center">
           <Col xs={12} className="footer-bottom text-center">
-            <p className="m-0">&copy; 2025 Grupo 1.</p>
+            <p className="m-0" style={{ fontSize: fontSizes.footerSmall }}>&copy; 2025 Grupo 1.</p>
           </Col>
         </Row>
       </Container>

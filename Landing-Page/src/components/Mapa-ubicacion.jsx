@@ -1,11 +1,14 @@
 import { Container } from 'react-bootstrap';
 import '../styles/mapaubi.css';
+import { useFontSizes } from '../context/FontSizeContext';
 
 const MapaUbicacion = () => {
+  const fontSizes = useFontSizes();
+
   return (
     <Container fluid className="pt-4 pb-5" id="mapa-ubicacion">
       <Container>
-        <h2 className="text-center fw-bold text-uppercase mb-4 pb-3">¿DÓNDE ESTAMOS?</h2>
+        <h2 className="text-center fw-bold text-uppercase mb-4 pb-3" style={{ fontSize: fontSizes.mapaTitle, wordBreak: 'break-word', hyphens: 'auto' }}>¿DÓNDE ESTAMOS?</h2>
         <div className="d-flex justify-content-center">
           <div className="map-wrapper position-relative w-100" style={{ maxWidth: '1200px', height: '60vh', minHeight: '300px', maxHeight: '600px' }}>
             <iframe
