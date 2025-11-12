@@ -1,57 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 .footer {
-    background-color: #2c3e50;
+    background-color: #0d2053;
     color: white;
-    padding: 0.75rem 0;
+    padding: 0;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
-.footer h4 {
-    font-family: 'Open Sans', sans-serif;
+.footer h4, .footer h5 {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .footer-logo {
     width: 50px;
     height: auto;
+    animation: fadeInScale 1s ease-out;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Animaciones para las secciones */
+.footer-info-section {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.footer-map-section {
+    animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Contenedor del mapa */
+.map-container {
+    min-height: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-map {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-map:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Redes sociales */
 .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
     color: white;
 }
 
 .social-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
     color: white;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 .contact-link {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
 }
 
 .contact-link:hover {
     color: #85C1E9;
+    border-bottom: 1px solid #85C1E9;
+    transform: translateX(3px);
 }
 
 .footer-bottom {
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-bottom p {
-    opacity: 0.8;
+    opacity: 0.85;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Centrado vertical de contenido */
+.footer-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Responsive - Media queries solo si es necesario */
+@media (max-width: 991.98px) {
+    .map-container {
+        min-height: 220px;
+        max-height: 280px;
+    }
+    
+    .footer-info-section,
+    .footer-map-section {
+        animation: fadeIn 0.8s ease-out;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .footer-logo {
+        margin: 0 auto 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-logo {
+        width: 45px;
+    }
+    
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .map-container {
+        min-height: 200px;
+    }
 }
