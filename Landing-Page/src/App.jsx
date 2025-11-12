@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./components/NavBar.jsx"
-import Carrusel from './components/Carrusel.jsx'
+import HeroSection from './components/HeroSection.jsx';  
 import SobreNosotros from './components/SobreNosotros.jsx'
 import OfertaAcademica from './components/OfertaAcademica.jsx'
 import Galeria from './components/Galeria.jsx'
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Carrusel />
+      <HeroSection />
       <SobreNosotros />
       <OfertaAcademica />
       <Galeria />
