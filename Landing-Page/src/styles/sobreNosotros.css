@@ -1,21 +1,195 @@
-.info-contenedor-blanco {
-    background-color: seashell;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
 
+/* Título - Animación desde abajo hacia arriba */
 .info-titulo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1d2659;
-    letter-spacing: 3px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
+.info-titulo.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+.info-titulo.animate-on-scroll.animated {
+    animation: slideInUp 1s ease-out forwards;
+}
+
+/* Imagen - Animación desde derecha hacia izquierda */
+.info-imagen {
+    opacity: 0 !important;
+}
+
+.info-imagen.animate-on-scroll {
+    opacity: 0 !important;
+}
+
+.info-imagen.animate-on-scroll.animated {
+    opacity: 1 !important;
+    animation: slideInRight 1s ease-out 0.3s forwards;
+}
+
+/* Contenido de texto - Animación desde izquierda hacia derecha */
 .info-contenido {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    line-height: 1.8;
     text-align: justify;
+}
+
+.info-contenido.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.info-contenido.animate-on-scroll.animated {
+    animation: slideInLeft 1s ease-out 0.5s forwards;
+}
+
+/* Clase para subtítulos si los hay */
+.info-subtitulo {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    color: #34495e;
+}
+
+.info-subtitulo.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.info-subtitulo.animate-on-scroll.animated {
+    animation: slideInUp 1s ease-out 0.2s forwards;
+}
+
+/* Sección sobre nosotros */
+#sobre-nosotros {
+  padding-top: 3rem !important;
+  padding-bottom: 0rem !important;
+}
+
+/* Estadísticas */
+.stats-container {
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.stats-container.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.stats-container.animate-on-scroll.animated {
+  animation: fadeInUp 1s ease-out 0.7s forwards;
+}
+
+.stat-item {
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-svg {
+  color: #1b3783;
+}
+
+.stat-number {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Cards de características */
+.feature-card {
+  transition: transform 1.4s ease;
+  border: 2px solid transparent !important;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.05) !important;
+  border: 2px solid #0d2053 !important;
+  box-shadow: 0 8px 25px rgba(13, 32, 83, 0.12);
+}
+
+.feature-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #294694;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  background-color: #294694;
+}
+
+.feature-icon {
+  color: white;
+  transition: transform 0.6s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(360deg);
+}
+
+.feature-title {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  color: #2c3e50;
+}
+
+.feature-description {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Animaciones para las cards */
+.feature-card.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.feature-card.animate-on-scroll.animated {
+  animation: slideInUp 1s ease-out forwards;
+}
+
+/* Delays escalonados para cada card */
+.feature-card.animate-on-scroll:nth-child(1).animated {
+  animation-delay: 0.2s;
+}
+
+.feature-card.animate-on-scroll:nth-child(2).animated {
+  animation-delay: 0.4s;
+}
+
+.feature-card.animate-on-scroll:nth-child(3).animated {
+  animation-delay: 0.6s;
 }
 
 

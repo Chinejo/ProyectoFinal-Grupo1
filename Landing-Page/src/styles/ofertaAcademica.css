@@ -1,58 +1,180 @@
-.planes-contenedor-blanco {
-  background-color: seashell;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Sección principal */
+#info-planes {
+  padding-top: 1rem !important;
+  padding-bottom: 2rem !important;
 }
 
+/* Contenedor principal - fondo transparente */
+.planes-contenedor {
+  background-color: transparent;
+}
+
+/* Título principal - igual que Sobre Nosotros */
 .planes-titulo {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #1d2659;
-  letter-spacing: 3px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
+.planes-titulo.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.planes-titulo.animate-on-scroll.animated {
+  animation: slideInUp 1s ease-out forwards;
+}
+
+/* Párrafo introductorio */
+.planes-intro {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.1rem !important;
+}
+
+.planes-intro.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.planes-intro.animate-on-scroll.animated {
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+/* Contenedor de turnos */
 .planes-contenedor-turnos {
-  font-family: Arial, sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: #d4d1e8;
-  border: 2px solid rgba(145, 142, 142, 0.17);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.planes-contenedor-turnos.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.planes-contenedor-turnos.animate-on-scroll.animated {
+  animation: slideInUp 1s ease-out forwards;
+}
+
+.planes-contenedor-turnos:nth-of-type(1).animated {
+  animation-delay: 0.2s;
+}
+
+.planes-contenedor-turnos:nth-of-type(2).animated {
+  animation-delay: 0.4s;
+}
+
+.planes-contenedor-turnos:nth-of-type(3).animated {
+  animation-delay: 0.6s;
+}
+
+.planes-contenedor-turnos:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.15);
+}
+
+/* Subtítulos de turnos - fuente moderna y legible con uppercase */
 .planes-turnos {
-  color: #313c78;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(52, 152, 219, 0.3);
+  text-transform: uppercase;
 }
 
-#info-planes .accordion-item-custom {
-  border: 2px solid #124567;
-  transition: transform 0.2s, box-shadow 0.2s;
-  background-color: rgb(253, 253, 255);
+/* Items del acordeón */
+.accordion-item-planes {
+  background-color: #ffffff;
+  border: 1px solid rgba(52, 152, 219, 0.3) !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-#info-planes .accordion-item-custom:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.accordion-item-planes:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
+  border-color: #3498db !important;
 }
 
-#info-planes .accordion-item-custom .accordion-button {
-  color: rgb(4, 10, 59);
-  background-color: seashell;
+/* Botón del acordeón */
+.accordion-item-planes .accordion-button {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background-color: rgba(52, 152, 219, 0.05);
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-#info-planes .accordion-item-custom .accordion-button:not(.collapsed) {
-  background-color: seashell;
-  color: rgb(4, 10, 59);
+.accordion-item-planes .accordion-button:not(.collapsed) {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #1b3783;
+  border-bottom: 2px solid #3498db;
 }
 
+.accordion-item-planes .accordion-button:hover {
+  background-color: rgba(52, 152, 219, 0.12);
+}
+
+.accordion-item-planes .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+  border-color: #3498db;
+}
+
+/* Cuerpo del acordeón */
 .planes-descripcion-body {
-  background-color: rgba(10, 18, 164, 0.13);
-  border-top: 2px solid #124567;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(52, 152, 219, 0.03);
+  border-top: 1px solid rgba(52, 152, 219, 0.2);
+  line-height: 1.7;
 }
 
+/* Caja de información */
 .planes-info-box {
-  background-color: #ffffffc1;
-  border-left: 4px solid #297fb9;
+  background-color: #ffffff;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
+.planes-info-box:hover {
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+  border-left-width: 6px;
+}
+
+/* Términos de definición */
 .planes-dt {
-  color: #3b5c7d;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1b3783;
+  font-weight: 600;
+}
+
+.planes-info-box dd {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animación para el acordeón al abrirse */
+.accordion-item-planes .accordion-collapse {
+  transition: height 0.35s ease;
+}
+
+/* Responsive adjustments usando solo Bootstrap utilities donde sea posible */
+.planes-info-box dl dt {
+  font-size: 0.95rem;
+}
+
+.planes-info-box dl dd {
+  font-size: 0.9rem;
 }
