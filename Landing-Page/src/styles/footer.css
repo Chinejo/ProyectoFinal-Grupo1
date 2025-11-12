@@ -19,7 +19,7 @@
 }
 
 .footer-logo {
-    width: 50px;
+    width: 65px;
     height: auto;
     animation: fadeInScale 1s ease-out;
     display: block;
@@ -122,8 +122,8 @@
 }
 
 .footer-bottom {
-    margin-top: 1rem;
-    padding-top: 1rem;
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -173,7 +173,7 @@
 
 @media (max-width: 575.98px) {
     .footer-logo {
-        width: 45px;
+        width: 55px;
     }
     
     .social-link {

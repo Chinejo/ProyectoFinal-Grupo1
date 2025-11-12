@@ -37,7 +37,7 @@ function NavBar() {
     { id: 'sobre-nosotros', label: 'Sobre Nosotros', href: '#sobre-nosotros' },
     { id: 'info-planes', label: 'Información de Planes', href: '#info-planes' },
     { id: 'galeria', label: 'Galería', href: '#galeria' },
-    { id: 'mapa-ubicacion', label: 'Donde encontrarnos', href: '#mapa-ubicacion' }
+    { id: 'footer', label: 'Donde encontrarnos', href: '#footer' }
   ];
 
   return (

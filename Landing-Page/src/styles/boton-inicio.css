@@ -1,24 +1,35 @@
 .boton-inicio {
-  background-color: #4a5f7a !important;
-  border-color: #4a5f7a !important;
+  background-color: #0d2053 !important;
+  border-color: #0d2053 !important;
   border-radius: 50% !important;
   padding: 0;
   z-index: 99999 !important;
   pointer-events: auto !important;
   cursor: pointer !important;
-  transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(13, 32, 83, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.boton-inicio.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .boton-inicio:hover {
-  transform: scale(1.05);
-  background-color: #5a6f8a !important;
-  border-color: #5a6f8a !important;
+  transform: translateY(-5px) scale(1.1);
+  background-color: #1a3570 !important;
+  border-color: #1a3570 !important;
+  box-shadow: 0 8px 25px rgba(13, 32, 83, 0.4);
 }
 
 .boton-inicio:active {
-  transform: scale(0.95);
-  background-color: #5a6f8a !important;
-  border-color: #5a6f8a !important;
+  transform: translateY(-2px) scale(1.05);
+  background-color: #0a1840 !important;
+  border-color: #0a1840 !important;
 }
 
 .position-fixed.bottom-0.start-0 {
