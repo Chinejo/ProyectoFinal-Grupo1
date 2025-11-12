@@ -1,6 +1,5 @@
 import logo from "../assets/LogoEscolar.jpg"
 import '../styles/footer.css';
-import { Instagram, Facebook } from 'react-bootstrap-icons';
 import { OverlayTrigger, Tooltip, Container, Row, Col } from 'react-bootstrap';
 import { useFontSizes } from '../context/FontSizeContext';
 
@@ -59,7 +58,7 @@ const Footer = () => {
                   </OverlayTrigger>
                   <OverlayTrigger placement="top" overlay={<Tooltip>Link a la página del turno noche</Tooltip>}>
                     <a 
-                      href="https://facebook.com/escueladecomerciorepublicadepanama" 
+                      href="https://www.facebook.com/profile.php?id=61560700463128&_rdr" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="Link a la página del turno noche"
@@ -68,23 +67,11 @@ const Footer = () => {
                       <Facebook size={18} />
                     </a>
                   </OverlayTrigger>
-                  <OverlayTrigger placement="top" overlay={<Tooltip>Link a nuestra página de Instagram</Tooltip>}>
-                    <a 
-                      href="https://instagram.com/tuempresa" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      aria-label="Link a nuestra página de Instagram"
-                      className="social-link"
-                    >
-                      <Instagram size={18} />
-                    </a>
-                  </OverlayTrigger>
                 </div>
               </div>
             </div>
           </Col>
 
-          {/* Columna derecha - Mapa */}
           <Col xs={12} lg={6} className="footer-map-section">
             <div className="h-100 d-flex flex-column justify-content-center">
               <h4 className="text-center fw-normal mb-2" style={{ fontSize: fontSizes.footerSubtitle }}>
@@ -104,7 +91,6 @@ const Footer = () => {
           </Col>
         </Row>
 
-        {/* Footer bottom */}
         <Row className="justify-content-center mt-2">
           <Col xs={12} className="footer-bottom text-center">
             <p className="m-0" style={{ fontSize: fontSizes.footerSmall }}>
