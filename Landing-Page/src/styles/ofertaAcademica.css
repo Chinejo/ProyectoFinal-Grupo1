@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500;600&display=swap');
 
-/* Sección principal */
 #info-planes {
   padding-top: 1rem !important;
   padding-bottom: 2rem !important;
 }
 
-/* Contenedor principal - fondo transparente */
 .planes-contenedor {
   background-color: transparent;
 }
 
-/* Título principal - igual que Sobre Nosotros */
 .planes-titulo {
   font-family: 'Playfair Display', 'Times New Roman', serif;
   color: #2c3e50;
@@ -31,7 +28,6 @@
   animation: slideInUp 1s ease-out forwards;
 }
 
-/* Párrafo introductorio */
 .planes-intro {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #555;
@@ -49,7 +45,6 @@
   animation: fadeInUp 1s ease-out 0.3s forwards;
 }
 
-/* Contenedor de turnos */
 .planes-contenedor-turnos {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(255, 255, 255, 0.5);
@@ -83,7 +78,6 @@
   box-shadow: 0 6px 20px rgba(52, 152, 219, 0.15);
 }
 
-/* Subtítulos de turnos - fuente moderna y legible con uppercase */
 .planes-turnos {
   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
@@ -93,7 +87,6 @@
   text-transform: uppercase;
 }
 
-/* Items del acordeón */
 .accordion-item-planes {
   background-color: #ffffff;
   border: 1px solid rgba(52, 152, 219, 0.3) !important;
@@ -107,7 +100,6 @@
   border-color: #3498db !important;
 }
 
-/* Botón del acordeón */
 .accordion-item-planes .accordion-button {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
@@ -131,7 +123,6 @@
   border-color: #3498db;
 }
 
-/* Cuerpo del acordeón */
 .planes-descripcion-body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(52, 152, 219, 0.03);
@@ -139,7 +130,6 @@
   line-height: 1.7;
 }
 
-/* Caja de información */
 .planes-info-box {
   background-color: #ffffff;
   border-left: 4px solid #3498db;
@@ -152,7 +142,6 @@
   border-left-width: 6px;
 }
 
-/* Términos de definición */
 .planes-dt {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1b3783;
@@ -165,12 +154,10 @@
   line-height: 1.6;
 }
 
-/* Animación para el acordeón al abrirse */
 .accordion-item-planes .accordion-collapse {
   transition: height 0.35s ease;
 }
 
-/* Responsive adjustments usando solo Bootstrap utilities donde sea posible */
 .planes-info-box dl dt {
   font-size: 0.95rem;
 }
