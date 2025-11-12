@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
 
-/* Título - Animación desde abajo hacia arriba */
 .info-titulo {
     font-family: 'Playfair Display', 'Times New Roman', serif;
     color: #2c3e50;
@@ -20,7 +19,6 @@
     animation: slideInUp 1s ease-out forwards;
 }
 
-/* Imagen - Animación desde derecha hacia izquierda */
 .info-imagen {
     opacity: 0 !important;
 }
@@ -34,7 +32,6 @@
     animation: slideInRight 1s ease-out 0.3s forwards;
 }
 
-/* Contenido de texto - Animación desde izquierda hacia derecha */
 .info-contenido {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #444;
@@ -51,12 +48,6 @@
     animation: slideInLeft 1s ease-out 0.5s forwards;
 }
 
-/* Clase para subtítulos si los hay */
-.info-subtitulo {
-    font-family: 'Playfair Display', 'Times New Roman', serif;
-    color: #34495e;
-}
-
 .info-subtitulo.animate-on-scroll {
     opacity: 0;
     transform: translateY(50px);
@@ -66,13 +57,11 @@
     animation: slideInUp 1s ease-out 0.2s forwards;
 }
 
-/* Sección sobre nosotros */
 #sobre-nosotros {
   padding-top: 3rem !important;
   padding-bottom: 0rem !important;
 }
 
-/* Estadísticas */
 .stats-container {
   padding: 1rem;
   background-color: transparent;
@@ -120,7 +109,6 @@
   white-space: nowrap;
 }
 
-/* Cards de características */
 .feature-card {
   transition: transform 1.4s ease;
   border: 2px solid transparent !important;
@@ -169,7 +157,6 @@
   line-height: 1.6;
 }
 
-/* Animaciones para las cards */
 .feature-card.animate-on-scroll {
   opacity: 0;
   transform: translateY(80px);
@@ -179,7 +166,6 @@
   animation: slideInUp 1s ease-out forwards;
 }
 
-/* Delays escalonados para cada card */
 .feature-card.animate-on-scroll:nth-child(1).animated {
   animation-delay: 0.2s;
 }

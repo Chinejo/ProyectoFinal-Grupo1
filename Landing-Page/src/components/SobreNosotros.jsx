@@ -9,7 +9,6 @@ import { useCountUp } from '../hooks/useCountUp'
 function SobreNosotros() {
   const fontSizes = useFontSizes();
   
-  // Referencias para cada elemento que queremos animar
   const [tituloRef, tituloVisible] = useScrollAnimation();
   const [imagenRef, imagenVisible] = useScrollAnimation();
   const [contenidoRef, contenidoVisible] = useScrollAnimation();
@@ -18,7 +17,6 @@ function SobreNosotros() {
   const [card2Ref, card2Visible] = useScrollAnimation();
   const [card3Ref, card3Visible] = useScrollAnimation();
 
-  // Contadores animados
   const count1 = useCountUp(60, 2000, statsVisible);
   const count2 = useCountUp(1200, 2000, statsVisible);
   const count3 = useCountUp(95, 2000, statsVisible);
@@ -55,7 +53,6 @@ function SobreNosotros() {
                 La Escuela de Comercio República de Panamá es una institución pública que forma estudiantes íntegros en el área comercial y contable. Promovemos valores, pensamiento crítico y compromiso con la comunidad, integrando formación académica y desarrollo personal.
               </p>
 
-              {/* Estadísticas */}
               <div 
                 ref={statsRef}
                 className={`stats-container animate-on-scroll ${statsVisible ? 'animated' : ''}`}
@@ -112,7 +109,6 @@ function SobreNosotros() {
             </Col>
           </Row>
 
-          {/* Cards de características */}
           <Row className="mt-5 g-4">
             <Col xs={12} md={4}>
               <div ref={card1Ref}>
