@@ -43,7 +43,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="navbar-main" sticky="top">
       <Container fluid className="px-4">
-        <Navbar.Toggle aria-controls="navbar-nav" className="border-0 mx-auto">
+        <Navbar.Toggle aria-controls="navbar-nav" className="border-0 ms-auto">
           <List size={26} color="white" />
         </Navbar.Toggle>
 
