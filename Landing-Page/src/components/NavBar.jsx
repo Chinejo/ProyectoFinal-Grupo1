@@ -27,7 +27,7 @@ function NavBar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Llamada inicial
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -39,6 +39,15 @@ function NavBar() {
     { id: 'galeria', label: 'Galería', href: '#galeria' },
     { id: 'footer', label: 'Donde encontrarnos', href: '#footer' }
   ];
+
+  const handleNavClick = (event, id) => {
+    event.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      event.currentTarget.blur();
+    }
+  };
 
   return (
     <Navbar expand="lg" className="navbar-main" sticky="top">
@@ -54,6 +63,7 @@ function NavBar() {
                 key={link.id}
                 href={link.href}
                 className={`nav-button px-3 mx-1 ${activeSection === link.id ? 'active' : ''}`}
+                onClick={(event) => handleNavClick(event, link.id)}
               >
                 {link.label}
               </Nav.Link>
