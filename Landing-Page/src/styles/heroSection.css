@@ -1,19 +1,15 @@
-/* Importar fuente moderna */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-/* Hero Section Principal */
 .hero-section {
   min-height: 100vh;
   background: #0d2053;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Contenedor del lado izquierdo */
 .left-content {
   padding: 2rem 1rem !important;
 }
 
-/* Contenedor del logo */
 .logo-container {
   animation: fadeInScale 1s ease-out;
 }
@@ -26,7 +22,6 @@
   background: transparent;
 }
 
-/* Título */
 .school-title {
   font-weight: 800;
   color: #ffffff;
@@ -36,13 +31,11 @@
   line-height: 1.3;
 }
 
-/* Cursor parpadeante */
 .cursor {
   animation: blink 1s infinite;
   color: #ffffff;
 }
 
-/* Subtítulo/Frase */
 .school-subtitle {
   color: #f0f0f0;
   font-weight: 300;
@@ -51,7 +44,6 @@
   animation: fadeInUp 1s ease-out 1.5s forwards;
 }
 
-/* Carrusel lateral */
 .carousel-side {
   height: 100%;
   border-radius: 15px;
@@ -86,7 +78,6 @@
   font-weight: 300;
 }
 
-/* Botón de Oferta Académica */
 .academic-offer-btn {
   display: inline-block;
   text-decoration: none;
@@ -117,7 +108,6 @@
   transform: translateY(-1px) !important;
 }
 
-/* Columna del collage */
 .collage-column {
   height: 100vh;
   position: relative;
@@ -148,7 +138,6 @@
   pointer-events: none;
 }
 
-/* Responsive adjustments */
 @media (max-width: 992px) {
   .collage-column {
     height: 60vh;

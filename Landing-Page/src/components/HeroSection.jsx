@@ -40,7 +40,7 @@ function HeroSection() {
         clearInterval(interval);
       }
       index++;
-    }, 100); // Velocidad de escritura
+    }, 100); 
 
     return () => clearInterval(interval);
   }, []);
@@ -49,7 +49,6 @@ function HeroSection() {
     <section className="hero-section d-flex align-items-center">
       <Container fluid className="h-100 px-0">
         <Row className="h-100 align-items-center g-0">
-          {/* Columna Izquierda - Logo y Título */}
           <Col lg={6} md={12} className="text-center px-3 left-content">
             <div className="logo-container mb-4">
               <img src={logoEscuela} alt="Logo Escuela de Comercio República de Panamá" className="school-logo" />
@@ -71,7 +70,6 @@ function HeroSection() {
             </a>
           </Col>
 
-          {/* Columna Derecha - Imagen Collage */}
           <Col lg={6} md={12} className="p-0 collage-column">
             <div className="collage-container">
               <img 
