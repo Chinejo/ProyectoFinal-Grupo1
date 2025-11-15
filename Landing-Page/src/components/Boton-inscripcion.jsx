@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import '../styles/boton-inicio.css';
+import '../styles/boton-inscripcion.css';
 import { useFontSizes } from '../context/FontSizeContext';
 
 const PaperPenIcon = ({ size = 24 }) => (
@@ -20,7 +20,7 @@ const PaperPenIcon = ({ size = 24 }) => (
   </svg>
 );
 
-function BotonInicio() {
+function BotonInscripcion() {
   const fontSizes = useFontSizes();
   const iconSize = Number.parseFloat(fontSizes.buttonIconSize ?? '') || 24;
   const [isVisible, setIsVisible] = useState(false);
@@ -82,4 +82,4 @@ function BotonInicio() {
   );
 }
 
-export default BotonInicio;
+export default BotonInscripcion;
