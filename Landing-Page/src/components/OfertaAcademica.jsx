@@ -7,7 +7,6 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 function OfertaAcademica() {
   const fontSizes = useFontSizes();
 
-  // Referencias para animaciones
   const [tituloRef, tituloVisible] = useScrollAnimation();
   const [introRef, introVisible] = useScrollAnimation();
   const [turnoMañanaRef, turnoMañanaVisible] = useScrollAnimation();
