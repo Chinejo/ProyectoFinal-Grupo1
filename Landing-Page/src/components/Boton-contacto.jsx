@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { EnvelopeFill } from 'react-bootstrap-icons';
 import '../styles/boton-contacto.css';
 import { useFontSizes } from '../context/FontSizeContext';
+import { EnvelopeFill } from 'react-bootstrap-icons';
 
 const BotonContacto = () => {
   const [show, setShow] = useState(false);
@@ -23,7 +23,7 @@ const BotonContacto = () => {
         fluid
         className="position-fixed bottom-0 end-0 p-3 contact-container"
       >
-  <Row className="justify-content-end">
+        <Row className="justify-content-end">
           <Col xs="auto">
             <Button
               variant="primary"
