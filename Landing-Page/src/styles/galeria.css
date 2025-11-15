@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
 
-/* Sección galería */
 #galeria {
   padding-top: 1rem !important;
   padding-bottom: 3rem !important;
 }
 
-/* Título principal - igual que Sobre Nosotros */
 .info-titulo {
   font-family: 'Playfair Display', 'Times New Roman', serif;
   color: #2c3e50;
@@ -26,7 +24,6 @@
   animation: slideInUp 1s ease-out forwards;
 }
 
-/* Cards de galería - Diseño moderno con efectos avanzados */
 .galeria-card-wrapper {
   position: relative;
   border-radius: 16px;
@@ -51,7 +48,6 @@
   animation: slideInUp 1s ease-out forwards;
 }
 
-/* Delays escalonados para cada card */
 .galeria-card-wrapper.animate-on-scroll:nth-child(1).animated {
   animation-delay: 0.2s;
 }
@@ -76,7 +72,6 @@
   animation-delay: 1.2s;
 }
 
-/* Contenedor de imagen */
 .galeria-card-image-container {
   position: relative;
   width: 100%;
@@ -98,7 +93,6 @@
   filter: brightness(0.6) contrast(1.1);
 }
 
-/* Efecto de brillo (shine) */
 .galeria-card-shine {
   position: absolute;
   top: -50%;
@@ -133,7 +127,6 @@
   }
 }
 
-/* Overlay mejorado con degradado más suave */
 .galeria-card-overlay {
   position: absolute;
   top: 0;
@@ -159,7 +152,6 @@
   opacity: 1;
 }
 
-/* Contenido del overlay mejorado */
 .galeria-card-content {
   text-align: center;
   color: #ffffff;
@@ -171,7 +163,6 @@
   transform: translateY(0);
 }
 
-/* Línea decorativa */
 .galeria-card-line {
   width: 0;
   height: 3px;
@@ -184,7 +175,6 @@
   width: 80px;
 }
 
-/* Icono principal en el overlay */
 .galeria-card-icon-display {
   display: inline-flex;
   align-items: center;
@@ -272,7 +262,6 @@
   transform: translateY(0);
 }
 
-/* Flecha indicadora */
 .galeria-card-arrow {
   display: inline-flex;
   align-items: center;
@@ -299,14 +288,12 @@
   }
 }
 
-/* Texto de las cards */
 .galeria-card-text {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #666;
   line-height: 1.6;
 }
 
-/* Párrafo introductorio */
 .galeria-intro {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #555;
