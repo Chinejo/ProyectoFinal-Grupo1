@@ -10,7 +10,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['inicio', 'sobre-nosotros', 'info-planes', 'galeria', 'mapa-ubicacion'];
+      const sections = ['inicio', 'sobre-nosotros', 'info-planes', 'galeria', 'footer'];
       let current = 'inicio';
 
       sections.forEach((id) => {
@@ -42,11 +42,20 @@ function NavBar() {
 
   const handleNavClick = (event, id) => {
     event.preventDefault();
+    event.stopPropagation();
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      event.currentTarget.blur();
     }
+
+    setTimeout(() => {
+      if (event.currentTarget && typeof event.currentTarget.blur === 'function') {
+        event.currentTarget.blur();
+      }
+      if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+      }
+    }, 0);
   };
 
   return (
