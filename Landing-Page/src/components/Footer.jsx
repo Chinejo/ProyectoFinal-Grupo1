@@ -1,5 +1,6 @@
 import logo from "../assets/LogoEscolar.jpg"
 import '../styles/footer.css';
+import { Facebook } from 'react-bootstrap-icons';
 import { OverlayTrigger, Tooltip, Container, Row, Col } from 'react-bootstrap';
 import { useFontSizes } from '../context/FontSizeContext';
 
@@ -10,7 +11,6 @@ const Footer = () => {
     <footer id="footer" className="footer" style={{ fontSize: fontSizes.footerText }}>
       <Container className="px-3 py-3">
         <Row className="g-3 align-items-center">
-          {/* Columna izquierda - Información */}
           <Col xs={12} lg={6} className="footer-info-section">
             <div className="footer-info-content">
               <div className="text-center mb-3">
