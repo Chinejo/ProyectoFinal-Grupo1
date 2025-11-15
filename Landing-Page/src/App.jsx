@@ -4,9 +4,9 @@ import HeroSection from './components/HeroSection.jsx';
 import SobreNosotros from './components/SobreNosotros.jsx'
 import OfertaAcademica from './components/OfertaAcademica.jsx'
 import Galeria from './components/Galeria.jsx'
-import BotonInicio from './components/Boton-inicio' 
-import BotonContacto from './components/Boton-contacto'
-import Footer from "./components/Footer"
+import Botoninscripcion from './components/Boton-inscripcion.jsx'
+import BotonContacto from './components/Boton-contacto.jsx'
+import Footer from "./components/Footer.jsx"
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <SobreNosotros />
       <OfertaAcademica />
       <Galeria />
-      <BotonInicio />
+      <Botoninscripcion />
       <BotonContacto />
       <Footer />
     </>
