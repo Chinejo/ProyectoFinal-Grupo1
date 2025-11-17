@@ -11,8 +11,8 @@
 .boton-contacto {
   padding: 0;
   border-radius: 50% !important;
-  background-color: #0d2053 !important;
-  border-color: #0d2053 !important;
+  background-color: #273A6D !important; 
+  border-color: #273A6D !important;      
   z-index: 99999 !important;
   pointer-events: auto !important;
   cursor: pointer !important;
@@ -22,15 +22,15 @@
 
 .boton-contacto:hover {
   transform: translateY(-5px) scale(1.1);
-  background-color: #1a3570 !important;
-  border-color: #1a3570 !important;
+  background-color: #334E89 !important;  
+  border-color: #334E89 !important;
   box-shadow: 0 8px 25px rgba(13, 32, 83, 0.4);
 }
 
 .boton-contacto:active {
   transform: translateY(-2px) scale(1.05);
-  background-color: #0a1840 !important;
-  border-color: #0a1840 !important;
+  background-color: #233159 !important;  
+  border-color: #233159 !important;
 }
 
 .offcanvas-contacto {
@@ -39,13 +39,13 @@
 }
 
 .offcanvas-contacto .offcanvas-title {
-  color: #0d2053;
+  color: #273A6D;  
   font-weight: bold;
 }
 
 .offcanvas-contacto .form-label {
   font-weight: 600;
-  color: #2c3e50;
+  color: #273A6D;  
 }
 
 .offcanvas-contacto .form-control {
@@ -55,20 +55,20 @@
 }
 
 .offcanvas-contacto .form-control:focus {
-  border-color: #0d2053;
-  box-shadow: 0 0 0 0.25rem rgba(13, 32, 83, 0.25);
+  border-color: #273A6D;  
+  box-shadow: 0 0 0 0.25rem rgba(39, 58, 109, 0.25);
 }
 
 .offcanvas-contacto .btn-primary {
-  background-color: #0d2053;
-  border-color: #0d2053;
+  background-color: #273A6D;  
+  border-color: #273A6D;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .offcanvas-contacto .btn-primary:hover {
-  background-color: #1a3570;
-  border-color: #1a3570;
+  background-color: #334E89;  
+  border-color: #334E89;
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(13, 32, 83, 0.3);
 }
