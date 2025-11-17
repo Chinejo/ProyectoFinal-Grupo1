@@ -23,14 +23,14 @@
 }
 
 .boton-inicio:hover {
-  transform: translateY(-5px) scale(1.03);
+  transform: translateY(-5px) scale(1.1);
   background-color: #334E89 !important;
   border-color: #334E89 !important;
   box-shadow: 0 8px 25px rgba(13, 32, 83, 0.4);
 }
 
 .boton-inicio:active {
-  transform: translateY(-2px) scale(1.01);
+  transform: translateY(-2px) scale(1.05);
   background-color: #233159 !important;
   border-color: #233159 !important;
 }
