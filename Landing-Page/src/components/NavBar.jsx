@@ -10,7 +10,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['inicio', 'sobre-nosotros', 'info-planes', 'galeria', 'mapa-ubicacion'];
+      const sections = ['inicio', 'sobre-nosotros', 'info-planes', 'galeria', 'footer'];
       let current = 'inicio';
 
       sections.forEach((id) => {
@@ -27,7 +27,7 @@ function NavBar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Llamada inicial
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -39,6 +39,24 @@ function NavBar() {
     { id: 'galeria', label: 'Galería', href: '#galeria' },
     { id: 'footer', label: 'Donde encontrarnos', href: '#footer' }
   ];
+
+  const handleNavClick = (event, id) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setTimeout(() => {
+      if (event.currentTarget && typeof event.currentTarget.blur === 'function') {
+        event.currentTarget.blur();
+      }
+      if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+      }
+    }, 0);
+  };
 
   return (
     <Navbar expand="lg" className="navbar-main" sticky="top">
@@ -54,6 +72,7 @@ function NavBar() {
                 key={link.id}
                 href={link.href}
                 className={`nav-button px-3 mx-1 ${activeSection === link.id ? 'active' : ''}`}
+                onClick={(event) => handleNavClick(event, link.id)}
               >
                 {link.label}
               </Nav.Link>

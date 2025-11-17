@@ -16,7 +16,7 @@ function App() {
       <SobreNosotros />
       <OfertaAcademica />
       <Galeria />
-      <Botoninscripcion />
+      <BotonInscripcion />
       <BotonContacto />
       <Footer />
     </>

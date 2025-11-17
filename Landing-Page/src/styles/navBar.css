@@ -22,7 +22,12 @@
     text-transform: uppercase;
 }
 
-/* Efecto de subrayado */
+.nav-button:focus-visible,
+.nav-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .nav-button::after {
     content: '';
     position: absolute;
@@ -35,7 +40,6 @@
     transform: translateX(-50%);
 }
 
-/* Hover - subrayado se agranda */
 .nav-button:hover::after {
     width: 80%;
 }
@@ -45,7 +49,6 @@
     background-color: transparent !important;
 }
 
-/* Sección activa - subrayado permanente */
 .nav-button.active::after {
     width: 80%;
 }
@@ -66,12 +69,10 @@
     box-shadow: none !important;
 }
 
-/* Animación suave del collapse en responsive */
 .navbar-collapse {
     transition: height 0.3s ease;
 }
 
-/* Estilos para vista móvil */
 @media (max-width: 991.98px) {
     .nav-button {
         text-align: center;
@@ -85,7 +86,6 @@
     }
 }
 
-/* Add smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }

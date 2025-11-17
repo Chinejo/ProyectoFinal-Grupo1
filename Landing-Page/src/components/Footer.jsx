@@ -1,6 +1,6 @@
 import logo from "../assets/LogoEscolar.jpg"
 import '../styles/footer.css';
-import { Instagram, Facebook } from 'react-bootstrap-icons';
+import { Facebook } from 'react-bootstrap-icons';
 import { OverlayTrigger, Tooltip, Container, Row, Col } from 'react-bootstrap';
 import { useFontSizes } from '../context/FontSizeContext';
 
@@ -11,7 +11,6 @@ const Footer = () => {
     <footer id="footer" className="footer" style={{ fontSize: fontSizes.footerText }}>
       <Container className="px-3 py-3">
         <Row className="g-3 align-items-center">
-          {/* Columna izquierda - Información */}
           <Col xs={12} lg={6} className="footer-info-section">
             <div className="footer-info-content">
               <div className="text-center mb-3">
@@ -59,7 +58,7 @@ const Footer = () => {
                   </OverlayTrigger>
                   <OverlayTrigger placement="top" overlay={<Tooltip>Link a la página del turno noche</Tooltip>}>
                     <a 
-                      href="https://facebook.com/escueladecomerciorepublicadepanama" 
+                      href="https://www.facebook.com/profile.php?id=61560700463128&_rdr" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="Link a la página del turno noche"
@@ -68,23 +67,11 @@ const Footer = () => {
                       <Facebook size={18} />
                     </a>
                   </OverlayTrigger>
-                  <OverlayTrigger placement="top" overlay={<Tooltip>Link a nuestra página de Instagram</Tooltip>}>
-                    <a 
-                      href="https://instagram.com/tuempresa" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      aria-label="Link a nuestra página de Instagram"
-                      className="social-link"
-                    >
-                      <Instagram size={18} />
-                    </a>
-                  </OverlayTrigger>
                 </div>
               </div>
             </div>
           </Col>
 
-          {/* Columna derecha - Mapa */}
           <Col xs={12} lg={6} className="footer-map-section">
             <div className="h-100 d-flex flex-column justify-content-center">
               <h4 className="text-center fw-normal mb-2" style={{ fontSize: fontSizes.footerSubtitle }}>
@@ -104,7 +91,6 @@ const Footer = () => {
           </Col>
         </Row>
 
-        {/* Footer bottom */}
         <Row className="justify-content-center mt-2">
           <Col xs={12} className="footer-bottom text-center">
             <p className="m-0" style={{ fontSize: fontSizes.footerSmall }}>
