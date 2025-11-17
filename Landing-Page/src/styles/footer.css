@@ -27,12 +27,19 @@
 }
 
 /* Animaciones para las secciones */
-.footer-info-section {
+.footer-panels {
+    width: 100%;
+}
+
+.footer-info-panel {
     animation: slideInLeft 0.8s ease-out;
 }
 
-.footer-map-section {
+.footer-map-panel {
     animation: slideInRight 0.8s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @keyframes slideInLeft {
@@ -98,6 +105,9 @@
     background-color: rgba(255, 255, 255, 0.15);
     transition: all 0.3s ease;
     color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .social-link:hover {
@@ -150,8 +160,8 @@
         max-height: 280px;
     }
     
-    .footer-info-section,
-    .footer-map-section {
+    .footer-info-panel,
+    .footer-map-panel {
         animation: fadeIn 0.8s ease-out;
     }
     
