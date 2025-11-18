@@ -60,7 +60,7 @@ function BotonInscripcion() {
     <Container fluid className="position-fixed bottom-0 start-0 p-3">
       <Row>
         <Col xs="auto">
-          <OverlayTrigger placement="top" overlay={<Tooltip>Inscripciones</Tooltip>}>
+          <OverlayTrigger placement="top" overlay={<Tooltip>Link al formulario de inscripciones</Tooltip>}>
             <Button
               variant="primary"
               onClick={handleClick}
@@ -71,7 +71,7 @@ function BotonInscripcion() {
                 minWidth: fontSizes.buttonSize,
                 minHeight: fontSizes.buttonSize
               }}
-              aria-label="Inscripciones"
+              aria-label="Link al formulario de inscripciones"
             >
               <PaperPenIcon size={iconSize} />
             </Button>
