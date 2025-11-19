@@ -5,17 +5,51 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Alert from 'react-bootstrap/Alert';
 import '../styles/boton-contacto.css';
 import { useFontSizes } from '../context/FontSizeContext';
 import { EnvelopeFill } from 'react-bootstrap-icons';
+import { sendContactEmail } from '../services/emailService';
 
 const BotonContacto = () => {
   const [show, setShow] = useState(false);
+  const [formValues, setFormValues] = useState({
+    nombre: '',
+    email: '',
+    celular: '',
+    mensaje: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState(null);
   const fontSizes = useFontSizes();
   const iconSize = Number.parseFloat(fontSizes.buttonIconSize ?? '') || 24;
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setFeedback(null);
+
+    try {
+      await sendContactEmail(formValues);
+      setFeedback({ type: 'success', message: 'Mensaje enviado con éxito. Nos pondremos en contacto a la brevedad.' });
+      setFormValues({ nombre: '', email: '', celular: '', mensaje: '' });
+    } catch (error) {
+      setFeedback({ type: 'danger', message: error.message || 'No pudimos enviar tu mensaje, inténtalo nuevamente.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -57,7 +91,12 @@ const BotonContacto = () => {
           <Container fluid>
             <Row>
               <Col xs={12}>
-                <Form>
+                <Form onSubmit={handleSubmit} noValidate>
+                  {feedback && (
+                    <Alert variant={feedback.type} className="mb-3" dismissible onClose={() => setFeedback(null)}>
+                      {feedback.message}
+                    </Alert>
+                  )}
                   <Form.Group className="mb-3" controlId="formNombre">
                     <Form.Label style={{ fontSize: fontSizes.formLabel }}>Nombre</Form.Label>
                     <Form.Control
@@ -65,6 +104,8 @@ const BotonContacto = () => {
                       placeholder="Ingresa tu nombre"
                       name="nombre"
                       required
+                      value={formValues.nombre}
+                      onChange={handleChange}
                       style={{ fontSize: fontSizes.formInput }}
                     />
                   </Form.Group>
@@ -76,6 +117,8 @@ const BotonContacto = () => {
                       placeholder="Ingresa tu email"
                       name="email"
                       required
+                      value={formValues.email}
+                      onChange={handleChange}
                       style={{ fontSize: fontSizes.formInput }}
                     />
                   </Form.Group>
@@ -87,6 +130,8 @@ const BotonContacto = () => {
                       placeholder="Ingresa tu celular"
                       name="celular"
                       required
+                      value={formValues.celular}
+                      onChange={handleChange}
                       style={{ fontSize: fontSizes.formInput }}
                     />
                   </Form.Group>
@@ -99,14 +144,22 @@ const BotonContacto = () => {
                       placeholder="Escribe tu mensaje"
                       name="mensaje"
                       required
+                      value={formValues.mensaje}
+                      onChange={handleChange}
                       style={{ fontSize: fontSizes.formInput }}
                     />
                   </Form.Group>
 
                   <Row>
                     <Col xs={12} className="d-grid">
-                      <Button variant="primary" type="submit" size="lg" style={{ fontSize: fontSizes.buttonText }}>
-                        Enviar
+                      <Button
+                        variant="primary"
+                        type="submit"
+                        size="lg"
+                        style={{ fontSize: fontSizes.buttonText }}
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting ? 'Enviando…' : 'Enviar'}
                       </Button>
                     </Col>
                   </Row>
