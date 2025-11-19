@@ -1,66 +1,89 @@
+import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../assets/LogoEscolar.jpg';
-import '../styles/NavBar.css';
+import { List } from 'react-bootstrap-icons';
+import '../styles/navBar.css';
 
 function NavBar() {
-  return (
-    <Navbar className="navbar-main py-1" sticky="top">
-      <Row className="w-100">
-        <Container fluid>
-          <Navbar.Brand href="#inicio" className="d-flex align-items-center px-3">
-            <img
-              src={Logo}
-              alt="Logo de la Escuela de Comercio República de Panamá"
-              height="50"
-              className="m-3"
-            />
-            <span className="navbar-title fw-bold d-inline mb-0">
-              Escuela de Comercio<br className="d-block d-md-none" /> República de Panamá
-            </span>
-          </Navbar.Brand>
-        </Container>
+  const [activeSection, setActiveSection] = useState('inicio');
 
-        <Container fluid>
-          <Row>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link 
-                href="#sobre-nosotros" 
-                className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['inicio', 'sobre-nosotros', 'info-planes', 'galeria', 'footer'];
+      let current = 'inicio';
+
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            current = id;
+          }
+        }
+      });
+
+      if (window.scrollY + window.innerHeight >= document.body.scrollHeight - 100) {
+        current = 'footer';
+      }
+
+      setActiveSection(current);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navLinks = [
+    { id: 'inicio', label: 'Inicio', href: '#inicio' },
+    { id: 'sobre-nosotros', label: 'Sobre Nosotros', href: '#sobre-nosotros' },
+    { id: 'info-planes', label: 'Información de Planes', href: '#info-planes' },
+    { id: 'galeria', label: 'Galería', href: '#galeria' },
+    { id: 'footer', label: 'Donde encontrarnos', href: '#footer' }
+  ];
+
+  const handleNavClick = (event, id) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setTimeout(() => {
+      if (event.currentTarget && typeof event.currentTarget.blur === 'function') {
+        event.currentTarget.blur();
+      }
+      if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+      }
+    }, 0);
+  };
+
+  return (
+    <Navbar expand="lg" className="navbar-main" sticky="top">
+      <Container fluid className="px-4">
+        <Navbar.Toggle aria-controls="navbar-nav" className="border-0 ms-auto">
+          <List size={26} color="white" />
+        </Navbar.Toggle>
+
+        <Navbar.Collapse id="navbar-nav" className="justify-content-center">
+          <Nav className="align-items-center">
+            {navLinks.map((link) => (
+              <Nav.Link
+                key={link.id}
+                href={link.href}
+                className={`nav-button px-3 mx-1 ${activeSection === link.id ? 'active' : ''}`}
+                onClick={(event) => handleNavClick(event, link.id)}
               >
-                Sobre Nosotros
+                {link.label}
               </Nav.Link>
-            </Col>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link 
-                href="#info-planes" 
-                className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
-              >
-                Información de Planes
-              </Nav.Link>
-            </Col>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link 
-                href="#galeria" 
-                className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
-              >
-                Galería
-              </Nav.Link>
-            </Col>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={6} className="d-flex justify-content-center">
-              <Nav.Link 
-                href="#mapa-ubicacion" 
-                className="nav-button fw-bold px-4 py-1 rounded-pill text-center text-nowrap"
-              >
-                Ubicación
-              </Nav.Link>
-            </Col>
-          </Row>
-        </Container>
-      </Row>
+            ))}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

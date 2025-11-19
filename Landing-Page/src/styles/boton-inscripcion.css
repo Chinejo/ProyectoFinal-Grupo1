@@ -1,0 +1,61 @@
+.boton-inicio {
+  background-color: #273A6D !important;
+  border-color: #273A6D !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(13, 32, 83, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-inicio.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.boton-inicio:hover {
+  transform: translateY(-5px) scale(1.1);
+  background-color: #334E89 !important;
+  border-color: #334E89 !important;
+  box-shadow: 0 8px 25px rgba(13, 32, 83, 0.4);
+}
+
+.boton-inicio:active {
+  transform: translateY(-2px) scale(1.05);
+  background-color: #233159 !important;
+  border-color: #233159 !important;
+}
+
+.boton-inicio .btn-text {
+  display: inline-block;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.boton-inicio svg {
+  flex: 0 0 auto;
+  display: block;
+}
+
+.position-fixed.bottom-0.start-0 {
+  z-index: 99999 !important;
+  pointer-events: none !important;
+}
+
+.position-fixed.bottom-0.start-0 * {
+  pointer-events: auto !important;
+}

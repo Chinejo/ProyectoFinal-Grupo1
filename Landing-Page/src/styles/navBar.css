@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.navbar-main {
+    background-color: #0d2053 !important;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+}
+
+.nav-button {
+    background-color: transparent !important;
+    color: white !important;
+    position: relative;
+    padding: 0.4rem 0.8rem !important;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.nav-button:focus-visible,
+.nav-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-button:hover::after {
+    width: 80%;
+}
+
+.nav-button:hover {
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+.nav-button.active::after {
+    width: 80%;
+}
+
+.nav-button.active {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-collapse {
+    transition: height 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+    .nav-button {
+        text-align: center;
+        padding: 0.75rem 1rem !important;
+        margin: 0.25rem 0;
+    }
+    
+    .nav-button::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
