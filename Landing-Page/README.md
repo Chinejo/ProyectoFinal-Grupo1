@@ -1,12 +1,28 @@
-# React + Vite
+# Landing Page – Configuración de EmailJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto usa Vite + React y ahora integra EmailJS para enviar los mensajes del formulario de contacto directamente a **esccomreppanama**.
 
-Currently, two official plugins are available:
+## Configuración requerida
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Copia `.env.example` a `.env.local` y completa las claves reales que obtienes de [EmailJS](https://www.emailjs.com/).
+	```env
+	VITE_EMAILJS_SERVICE_ID=service_xxx
+	VITE_EMAILJS_TEMPLATE_ID=template_xxx
+	VITE_EMAILJS_PUBLIC_KEY=public_xxx
+	VITE_EMAILJS_TO_EMAIL=esccomreppanama
+	```
+2. En el panel de EmailJS crea/actualiza una plantilla que utilice los siguientes campos:
+	- `to_email`: email de destino (se rellena con `esccomreppanama`).
+	- `from_name`: nombre ingresado por la persona.
+	- `reply_to`: email del remitente para poder contestar directamente.
+	- `phone_number`: número de celular.
+	- `message`: cuerpo del mensaje escrito por la persona.
+	- `subject` *(opcional)*: el asunto "Nuevo contacto desde la landing" ya se envía listo para usarse.
 
-## Expanding the ESLint configuration
+> EmailJS construirá el cuerpo del correo con esos campos, garantizando que siempre incluya nombre, email, celular y mensaje provistos por el usuario.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+
+- `npm run dev`: modo desarrollo con HMR.
+- `npm run build`: compila la app para producción.
+- `npm run preview`: levanta la build previamente generada.
